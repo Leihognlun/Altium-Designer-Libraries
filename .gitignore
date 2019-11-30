@@ -1,2 +1,5 @@
 
 *.Zip
+*.$$$
+*.REPPreview
+*.REP
