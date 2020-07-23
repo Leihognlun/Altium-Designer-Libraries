@@ -1,0 +1,15 @@
+Component   : USB-TypeC
+PCB Library : USB.PcbLib
+Date        : 2020/6/15
+Time        : 15:13:42
+
+
+
+Dimension : 12.751 x 9.144 mm
+
+ Layer(s)              Pads(s)  Tracks(s)  Fill(s)  Arc(s)  Text(s)
+--------------------------------------------------------------------
+ Multi Layer                16          0        0       0        0
+ Top Overlay                 0          4        0       2        0
+--------------------------------------------------------------------
+ Total                      16          4        0       2        0
