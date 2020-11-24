@@ -1,0 +1,10 @@
+582186937@qq.com
+13642956147
+C:\
+C:\Users\58218\OneDrive\ÎÄµµ\AltiumLL\SamacSys.SchLib
+C:\Users\58218\OneDrive\ÎÄµµ\AltiumLL\SamacSys.PcbLib
+0
+
+80
+True
+True
