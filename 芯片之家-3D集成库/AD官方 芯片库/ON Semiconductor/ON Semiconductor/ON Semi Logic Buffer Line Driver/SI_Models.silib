@@ -1,0 +1,2173 @@
+@IDBM:AC_000_S0_in.mac
+###############################################################################
+#
+# Header      : 1.0;
+# Filename    : AC_000_S0_in.mac;
+# FileRev     : 1.0;
+# Date        : Thu Jun 26 15:27:25 1997;
+# Permission  : ;
+# Simulator   : 2;
+# Modeltype   : 4;
+# Technology  : AC;
+# Changes     : None;
+#  Notes      : generated for TI SN74AC240 and comparable unidirectional
+#		buffers of technology AC, VCC = 5V, GND/VCC clamping diodes; 
+#		
+# RefSource
+#	Component    : SN74AC240;
+#	Manufacturer : TI;
+#	Buffername   : AC00_in;
+#	Buffertype   : IN;
+#	Pins         : Inputs;
+#	Method       : MEASUREMENT;
+#	Copyright    : None;
+#	Disclaimer   : None;
+#	Notes        : GND and VCC Clamping Diodes;
+#
+# RefCondition
+#	Process       : Typical;
+#	Temperature   : 25.000;
+#	SupplyVolt    : 5.000;
+#	RefVolt       : None;
+#	GndPackage    : IMPLICIT;
+#	VccPackage    : IMPLICIT;
+#	SigPackage    : IMPLICIT;
+#	TermLineImp   : 50.000;
+#	TermLineDelay : 5.000e-09;
+#	Notes         : None;
+#
+# LinearModel
+#	Resistance  : 1.000000e+09;
+#	Capacitance : 4.000000e-12;
+#	Inductance  : None;
+#	GndClamp    : None;
+#	PowClamp    : None;
+#	Notes       : None;
+#
+############################################################################
+MOD_STRUC 4
+INPUT_CHAR
+34
+-1.300000e+00   -1.732000e-01
+-1.220000e+00   -1.336000e-01
+-1.160000e+00   -1.058000e-01
+-1.100000e+00   -8.010000e-02
+-1.040000e+00   -5.690000e-02
+-1.000000e+00   -4.310000e-02
+-9.700000e-01   -3.370000e-02
+-9.400000e-01   -2.530000e-02
+-9.100000e-01   -1.820000e-02
+-8.800000e-01   -1.240000e-02
+-8.500000e-01   -8.000000e-03
+-8.200000e-01   -4.900000e-03
+-7.800000e-01   -2.300000e-03
+-7.200000e-01   -7.000000e-04
+-4.900000e-01   -0.000000e+00
+3.120000e+00   -0.000000e+00
+4.460000e+00   -0.000000e+00
+5.660000e+00   -0.000000e+00
+5.750000e+00   7.000000e-04
+5.800000e+00   2.700000e-03
+5.840000e+00   5.800000e-03
+5.890000e+00   1.140000e-02
+5.930000e+00   1.690000e-02
+5.980000e+00   2.510000e-02
+6.020000e+00   3.280000e-02
+6.060000e+00   4.150000e-02
+6.100000e+00   5.140000e-02
+6.140000e+00   6.290000e-02
+6.180000e+00   7.570000e-02
+6.220000e+00   8.990000e-02
+6.260000e+00   1.057000e-01
+6.300000e+00   1.229000e-01
+6.360000e+00   1.509000e-01
+6.400000e+00   1.704000e-01
+CAPACITY
+c0      4.000000e-12
+k1      0.000000e+00
+END
+@IDBM:AC_040_S0_out.mac
+###############################################################################
+#
+# Header      : 1.0;
+# Filename    : AC_040_S0_out.mac;
+# FileRev     : 1.0;
+# Date        : Tue Jul  8 16:01:09 1997;
+# Permission  : ;
+# Simulator   : 2;
+# Modeltype   : 4;
+# Technology  : AC;
+# Changes     : None;
+# Notes       : generated for TI SN74AC240 and comparable 3-state output
+#		drivers of technology AC, VCC = 5V;
+#
+# RefSource
+#	Component    : SN74AC240;
+#	Manufacturer : TI;
+#	Buffername   : AC240_out;
+#	Buffertype   : OUT;
+#	Pins         : Outputs;
+#	Method       : MEASUREMENT;
+#	Copyright    : None;
+#	Disclaimer   : None;
+#	Notes        : None;
+#
+# RefCondition
+#	Process       : Typical;
+#	Temperature   : 25.000;
+#	SupplyVolt    : 5.000;
+#	RefVolt       : None;
+#	GndPackage    : IMPLICIT;
+#	VccPackage    : IMPLICIT;
+#	SigPackage    : IMPLICIT;
+#	TermLineImp   : 52.000;
+#	TermLineDelay : 7.200e-09;
+#	TermVolt      : NotUsed;
+#	PullUpRes     : NotUsed;
+#	Notes         : None;
+#
+# LinearModel
+#	VoltLow     : 0.0;
+#	VoltHigh    : 5.0;
+#	RiseTime    : 1.2e-09;
+#	FallTime    : 1.6e-09;
+#	ResLow      : 9.7;
+#	ResHigh     : 12.5;
+#	Capacitance : 5.000000e-12;
+#	Inductance  : None;
+#	GndClamp    : None;
+#	PowClamp    : None;
+#	Notes       : Simulation results for a 50 Ohm transmission line load;
+#
+############################################################################
+MOD_STRUC 4
+IOUTL_CHAR
+22
+-9.700000e-01   1.992000e-01
+-9.300000e-01   1.666000e-01
+-8.900000e-01   1.406000e-01
+-8.500000e-01   1.209000e-01
+-8.100000e-01   1.075000e-01
+-7.500000e-01   9.500000e-02
+-4.200000e-01   5.210000e-02
+-6.000000e-02   7.300000e-03
+-3.000000e-02   3.600000e-03
+1.000000e-02   -1.200000e-03
+2.000000e-02   -2.300000e-03
+1.100000e-01   -1.300000e-02
+3.400000e-01   -3.910000e-02
+6.100000e-01   -6.700000e-02
+9.600000e-01   -9.810000e-02
+1.360000e+00   -1.261000e-01
+1.840000e+00   -1.493000e-01
+2.420000e+00   -1.652000e-01
+3.280000e+00   -1.727000e-01
+5.620000e+00   -1.716000e-01
+5.680000e+00   -1.793000e-01
+5.720000e+00   -1.919000e-01
+IOUTH_CHAR
+24
+-7.400000e-01   1.963000e-01
+-6.800000e-01   1.841000e-01
+-5.400000e-01   1.775000e-01
+1.500000e+00   1.669000e-01
+2.360000e+00   1.527000e-01
+3.040000e+00   1.310000e-01
+3.580000e+00   1.054000e-01
+4.060000e+00   7.560000e-02
+4.370000e+00   5.300000e-02
+4.390000e+00   5.140000e-02
+4.690000e+00   2.710000e-02
+4.880000e+00   1.070000e-02
+4.960000e+00   3.600000e-03
+4.970000e+00   2.800000e-03
+4.980000e+00   1.800000e-03
+5.080000e+00   -7.200000e-03
+5.130000e+00   -1.180000e-02
+5.680000e+00   -6.380000e-02
+5.740000e+00   -7.150000e-02
+5.780000e+00   -8.130000e-02
+5.800000e+00   -8.870000e-02
+5.840000e+00   -1.090000e-01
+5.920000e+00   -1.619000e-01
+5.960000e+00   -1.902000e-01
+CAPACITY
+c0      5.000000e-12
+SWITCH_CHAR
+RISE
+44
+0.000000e+00   0.000000e+00
+1.134146e-10   4.114554e-02
+1.734146e-10   9.549416e-02
+2.334146e-10   1.475805e-01
+3.534146e-10   2.858101e-01
+4.134146e-10   3.517414e-01
+4.734146e-10   4.144331e-01
+5.334146e-10   4.555742e-01
+5.934146e-10   5.249276e-01
+6.534146e-10   5.418133e-01
+7.134146e-10   6.116450e-01
+7.734146e-10   6.309275e-01
+8.334146e-10   6.644183e-01
+8.934146e-10   6.848130e-01
+9.534146e-10   7.227947e-01
+1.013415e-09   7.233943e-01
+1.133415e-09   7.810616e-01
+1.193415e-09   7.714007e-01
+1.253415e-09   7.981391e-01
+1.373415e-09   8.224476e-01
+1.433415e-09   8.421954e-01
+1.493415e-09   8.518207e-01
+1.553415e-09   8.563947e-01
+1.613415e-09   8.673828e-01
+1.673415e-09   8.858530e-01
+1.733415e-09   8.849633e-01
+1.853415e-09   9.029823e-01
+1.913415e-09   9.093819e-01
+1.973415e-09   9.208976e-01
+2.093415e-09   9.195123e-01
+2.273415e-09   9.298785e-01
+2.333415e-09   9.275931e-01
+2.633415e-09   9.301132e-01
+2.753415e-09   9.398354e-01
+2.933415e-09   9.412806e-01
+3.113415e-09   9.542522e-01
+3.233415e-09   9.592701e-01
+3.353415e-09   9.691245e-01
+3.413415e-09   9.675697e-01
+3.533415e-09   9.783546e-01
+3.713415e-09   9.857100e-01
+3.833415e-09   9.926621e-01
+3.953415e-09   9.940688e-01
+4.013415e-09   1.000000e+00
+FALL
+57
+0.000000e+00   1.000000e+00
+1.767967e-10   9.324835e-01
+2.967967e-10   8.714437e-01
+3.567967e-10   8.354927e-01
+4.167967e-10   8.044140e-01
+4.767967e-10   7.833651e-01
+5.367967e-10   7.523768e-01
+6.567967e-10   6.793600e-01
+7.167967e-10   6.381495e-01
+7.767967e-10   6.162254e-01
+8.367967e-10   5.792735e-01
+8.967967e-10   5.365238e-01
+9.567967e-10   5.250008e-01
+1.016797e-09   4.896705e-01
+1.076797e-09   4.620468e-01
+1.196797e-09   4.139909e-01
+1.316797e-09   3.741951e-01
+1.376797e-09   3.616434e-01
+1.436797e-09   3.241571e-01
+1.496797e-09   3.243854e-01
+1.556797e-09   3.130326e-01
+1.616797e-09   2.866061e-01
+1.676797e-09   2.833304e-01
+1.796797e-09   2.469926e-01
+1.856797e-09   2.473772e-01
+1.916797e-09   2.324092e-01
+1.976797e-09   2.129271e-01
+2.036797e-09   2.086142e-01
+2.096797e-09   1.944628e-01
+2.276797e-09   1.696325e-01
+2.336797e-09   1.558717e-01
+2.396797e-09   1.540786e-01
+2.576797e-09   1.280188e-01
+2.696797e-09   1.196870e-01
+2.816797e-09   1.089757e-01
+2.876797e-09   1.075264e-01
+3.116797e-09   9.239789e-02
+3.236797e-09   8.621023e-02
+3.296797e-09   8.616495e-02
+3.356797e-09   7.852142e-02
+3.536797e-09   6.695238e-02
+3.596797e-09   6.060315e-02
+3.716797e-09   5.888493e-02
+3.776797e-09   5.511082e-02
+3.836797e-09   4.820366e-02
+3.896797e-09   4.402062e-02
+3.956797e-09   4.346183e-02
+4.016797e-09   3.672021e-02
+4.136797e-09   2.943857e-02
+4.196797e-09   3.080102e-02
+4.316797e-09   2.496701e-02
+4.376797e-09   1.695864e-02
+4.436797e-09   1.305208e-02
+4.496797e-09   1.516370e-02
+4.616797e-09   1.461149e-02
+4.736797e-09   7.189606e-03
+4.790492e-09   0.000000e+00
+END
+@IDBM:AC_025_S0_tri.mac
+###############################################################################
+#
+# Header      : 1.0;
+# Filename    : AC_025_S0_tri.mac;
+# FileRev     : 1.0;
+# Date        : Fri Jul  4 14:56:09 1997;
+# Permission  : ;
+# Simulator   : 2;
+# Modeltype   : 4;
+# Technology  : AC;
+# Changes     : None;
+# Notes       : generated for TI SN74AC240 and comparable 3-state buffers
+#		of technology AC, VCC = 5V, GND/VCC clamping diodes;
+#
+# RefSource
+#	Component    : SN74AC240;
+#	Manufacturer : TI;
+#	Buffername   : AC240_tri;
+#	Buffertype   : TRI->IN;
+#	Pins         : Outputs;
+#	Method       : MEASUREMENT;
+#	Copyright    : None;
+#	Disclaimer   : None;
+#	Notes        : GND and VCC Clamping Diodes;
+#
+# RefCondition
+#	Process       : Typical;
+#	Temperature   : 25.000;
+#	SupplyVolt    : 5.000;
+#	RefVolt       : None;
+#	GndPackage    : IMPLICIT;
+#	VccPackage    : IMPLICIT;
+#	SigPackage    : IMPLICIT;
+#	TermLineImp   : 50.000;
+#	TermLineDelay : 5.000e-09;
+#	Notes         : None;
+#
+# LinearModel
+#	Resistance  : 1.000000e+09;
+#	Capacitance : 8.000000e-12;
+#	Inductance  : None;
+#	GndClamp    : None;
+#	PowClamp    : None;
+#	Notes       : None;
+#
+############################################################################
+MOD_STRUC 4
+INPUT_CHAR
+45
+-1.000000e+00   -1.921000e-01
+-9.400000e-01   -1.264000e-01
+-8.800000e-01   -7.630000e-02
+-8.400000e-01   -4.920000e-02
+-8.100000e-01   -3.320000e-02
+-7.800000e-01   -2.110000e-02
+-7.600000e-01   -1.540000e-02
+-7.400000e-01   -1.120000e-02
+-7.200000e-01   -8.300000e-03
+-7.000000e-01   -6.300000e-03
+-6.700000e-01   -4.500000e-03
+-6.500000e-01   -3.600000e-03
+-6.300000e-01   -3.100000e-03
+-6.200000e-01   -2.700000e-03
+-5.900000e-01   -2.000000e-03
+-5.600000e-01   -1.400000e-03
+-5.500000e-01   -1.300000e-03
+-5.300000e-01   -9.000000e-04
+-5.200000e-01   -8.000000e-04
+-5.100000e-01   -6.000000e-04
+-5.000000e-01   -6.000000e-04
+-4.900000e-01   -4.000000e-04
+-4.800000e-01   -4.000000e-04
+-4.700000e-01   -3.000000e-04
+-4.600000e-01   -3.000000e-04
+-4.500000e-01   -2.000000e-04
+-4.400000e-01   0.000000e+00
+5.600000e+00   0.000000e+00
+5.610000e+00   3.000000e-04
+5.620000e+00   4.000000e-04
+5.640000e+00   8.000000e-04
+5.650000e+00   1.200000e-03
+5.660000e+00   1.700000e-03
+5.670000e+00   2.400000e-03
+5.680000e+00   3.300000e-03
+5.690000e+00   4.700000e-03
+5.700000e+00   6.300000e-03
+5.710000e+00   8.600000e-03
+5.720000e+00   1.150000e-02
+5.740000e+00   1.920000e-02
+5.760000e+00   2.980000e-02
+5.790000e+00   4.960000e-02
+5.940000e+00   1.603000e-01
+5.950000e+00   1.749000e-01
+5.970000e+00   1.892000e-01
+CAPACITY
+c0      8.000000e-12
+k1      0.000000e+00
+END
+@IDBM:ACT_040_S0_in.mac
+###############################################################################
+#
+# Header      : 1.0;
+# Filename   : ACT_040_S0_in.mac;
+# FileRev     : 1.0;
+# Date        : Fri Jul  4 14:58:19 1997;
+# Permission  : ;
+# Simulator   : 2;
+# Modeltype   : 4;
+# Technology : ACT;
+# Changes     : None;
+#  Notes      : generated for TI SN74AC245 and comparable bidirectional
+#		buffers of technology AC, VCC = 5V, GND/VCC clamping diodes;
+#		
+# RefSource
+#	Component    : SN74AC245;
+#	Manufacturer : TI;
+#	Buffername   : AC245_bi;
+#	Buffertype   : BI->IN;
+#	Pins         : Inputs/Outputs;
+#	Method       : MEASUREMENT;
+#	Copyright    : None;
+#	Disclaimer   : None;
+#	Notes        : GND and VCC Clamping Diodes;
+#
+# RefCondition
+#	Process       : Typical;
+#	Temperature   : 25.000;
+#	SupplyVolt    : 5.000;
+#	RefVolt       : None;
+#	GndPackage    : IMPLICIT;
+#	VccPackage    : IMPLICIT;
+#	SigPackage    : IMPLICIT;
+#	TermLineImp   : 50.000;
+#	TermLineDelay : 5.000e-09;
+#	Notes         : None;
+#
+# LinearModel
+#	Resistance  : 1.000000e+09;
+#	Capacitance : 10.000000e-12;
+#	Inductance  : None;
+#	GndClamp    : None;
+#	PowClamp    : None;
+#	Notes       : None;
+#
+############################################################################
+MOD_STRUC 4
+INPUT_CHAR
+45
+-1.000000e+00   -1.921000e-01
+-9.400000e-01   -1.264000e-01
+-8.800000e-01   -7.630000e-02
+-8.400000e-01   -4.920000e-02
+-8.100000e-01   -3.320000e-02
+-7.800000e-01   -2.110000e-02
+-7.600000e-01   -1.540000e-02
+-7.400000e-01   -1.120000e-02
+-7.200000e-01   -8.300000e-03
+-7.000000e-01   -6.300000e-03
+-6.700000e-01   -4.500000e-03
+-6.500000e-01   -3.600000e-03
+-6.300000e-01   -3.100000e-03
+-6.200000e-01   -2.700000e-03
+-5.900000e-01   -2.000000e-03
+-5.600000e-01   -1.400000e-03
+-5.500000e-01   -1.300000e-03
+-5.300000e-01   -9.000000e-04
+-5.200000e-01   -8.000000e-04
+-5.100000e-01   -6.000000e-04
+-5.000000e-01   -6.000000e-04
+-4.900000e-01   -4.000000e-04
+-4.800000e-01   -4.000000e-04
+-4.700000e-01   -3.000000e-04
+-4.600000e-01   -3.000000e-04
+-4.500000e-01   -2.000000e-04
+-4.400000e-01   0.000000e+00
+5.600000e+00   0.000000e+00
+5.610000e+00   3.000000e-04
+5.620000e+00   4.000000e-04
+5.640000e+00   8.000000e-04
+5.650000e+00   1.200000e-03
+5.660000e+00   1.700000e-03
+5.670000e+00   2.400000e-03
+5.680000e+00   3.300000e-03
+5.690000e+00   4.700000e-03
+5.700000e+00   6.300000e-03
+5.710000e+00   8.600000e-03
+5.720000e+00   1.150000e-02
+5.740000e+00   1.920000e-02
+5.760000e+00   2.980000e-02
+5.790000e+00   4.960000e-02
+5.940000e+00   1.603000e-01
+5.950000e+00   1.749000e-01
+5.970000e+00   1.892000e-01
+CAPACITY
+c0      10.000000e-12
+k1      0.000000e+00
+END
+@IDBM:ACT_040_S0_out.mac
+###############################################################################
+#
+# Header      : 1.0;
+# Filename   : ACT_040_S0_out.mac;
+# FileRev     : 1.0;
+# Date        : Tue Jul  8 16:01:09 1997;
+# Permission  : ;
+# Simulator   : 2;
+# Modeltype   : 4;
+# Technology : ACT;
+# Changes     : None;
+# Notes       : generated for TI SN74ACT240 and comparable 3-state output
+#		drivers of technology ACT, VCC = 5V;
+#
+# RefSource
+#	Component    : SN74AC240;
+#	Manufacturer : TI;
+#	Buffername   : AC240_out;
+#	Buffertype   : OUT;
+#	Pins         : Outputs;
+#	Method       : MEASUREMENT;
+#	Copyright    : None;
+#	Disclaimer   : None;
+#	Notes        : None;
+#
+# RefCondition
+#	Process       : Typical;
+#	Temperature   : 25.000;
+#	SupplyVolt    : 5.000;
+#	RefVolt       : None;
+#	GndPackage    : IMPLICIT;
+#	VccPackage    : IMPLICIT;
+#	SigPackage    : IMPLICIT;
+#	TermLineImp   : 52.000;
+#	TermLineDelay : 7.200e-09;
+#	TermVolt      : NotUsed;
+#	PullUpRes     : NotUsed;
+#	Notes         : None;
+#
+# LinearModel
+#	VoltLow     : 0.0;
+#	VoltHigh    : 5.0;
+#	RiseTime    : 1.2e-09;
+#	FallTime    : 1.6e-09;
+#	ResLow      : 9.7;
+#	ResHigh     : 12.5;
+#	Capacitance : 5.000000e-12;
+#	Inductance  : None;
+#	GndClamp    : None;
+#	PowClamp    : None;
+#	Notes       : Simulation results for a 50 Ohm transmission line load;
+#
+############################################################################
+MOD_STRUC 4
+IOUTL_CHAR
+22
+-9.700000e-01   1.992000e-01
+-9.300000e-01   1.666000e-01
+-8.900000e-01   1.406000e-01
+-8.500000e-01   1.209000e-01
+-8.100000e-01   1.075000e-01
+-7.500000e-01   9.500000e-02
+-4.200000e-01   5.210000e-02
+-6.000000e-02   7.300000e-03
+-3.000000e-02   3.600000e-03
+1.000000e-02   -1.200000e-03
+2.000000e-02   -2.300000e-03
+1.100000e-01   -1.300000e-02
+3.400000e-01   -3.910000e-02
+6.100000e-01   -6.700000e-02
+9.600000e-01   -9.810000e-02
+1.360000e+00   -1.261000e-01
+1.840000e+00   -1.493000e-01
+2.420000e+00   -1.652000e-01
+3.280000e+00   -1.727000e-01
+5.620000e+00   -1.716000e-01
+5.680000e+00   -1.793000e-01
+5.720000e+00   -1.919000e-01
+IOUTH_CHAR
+24
+-7.400000e-01   1.963000e-01
+-6.800000e-01   1.841000e-01
+-5.400000e-01   1.775000e-01
+1.500000e+00   1.669000e-01
+2.360000e+00   1.527000e-01
+3.040000e+00   1.310000e-01
+3.580000e+00   1.054000e-01
+4.060000e+00   7.560000e-02
+4.370000e+00   5.300000e-02
+4.390000e+00   5.140000e-02
+4.690000e+00   2.710000e-02
+4.880000e+00   1.070000e-02
+4.960000e+00   3.600000e-03
+4.970000e+00   2.800000e-03
+4.980000e+00   1.800000e-03
+5.080000e+00   -7.200000e-03
+5.130000e+00   -1.180000e-02
+5.680000e+00   -6.380000e-02
+5.740000e+00   -7.150000e-02
+5.780000e+00   -8.130000e-02
+5.800000e+00   -8.870000e-02
+5.840000e+00   -1.090000e-01
+5.920000e+00   -1.619000e-01
+5.960000e+00   -1.902000e-01
+CAPACITY
+c0      5.000000e-12
+SWITCH_CHAR
+RISE
+44
+0.000000e+00   0.000000e+00
+1.134146e-10   4.114554e-02
+1.734146e-10   9.549416e-02
+2.334146e-10   1.475805e-01
+3.534146e-10   2.858101e-01
+4.134146e-10   3.517414e-01
+4.734146e-10   4.144331e-01
+5.334146e-10   4.555742e-01
+5.934146e-10   5.249276e-01
+6.534146e-10   5.418133e-01
+7.134146e-10   6.116450e-01
+7.734146e-10   6.309275e-01
+8.334146e-10   6.644183e-01
+8.934146e-10   6.848130e-01
+9.534146e-10   7.227947e-01
+1.013415e-09   7.233943e-01
+1.133415e-09   7.810616e-01
+1.193415e-09   7.714007e-01
+1.253415e-09   7.981391e-01
+1.373415e-09   8.224476e-01
+1.433415e-09   8.421954e-01
+1.493415e-09   8.518207e-01
+1.553415e-09   8.563947e-01
+1.613415e-09   8.673828e-01
+1.673415e-09   8.858530e-01
+1.733415e-09   8.849633e-01
+1.853415e-09   9.029823e-01
+1.913415e-09   9.093819e-01
+1.973415e-09   9.208976e-01
+2.093415e-09   9.195123e-01
+2.273415e-09   9.298785e-01
+2.333415e-09   9.275931e-01
+2.633415e-09   9.301132e-01
+2.753415e-09   9.398354e-01
+2.933415e-09   9.412806e-01
+3.113415e-09   9.542522e-01
+3.233415e-09   9.592701e-01
+3.353415e-09   9.691245e-01
+3.413415e-09   9.675697e-01
+3.533415e-09   9.783546e-01
+3.713415e-09   9.857100e-01
+3.833415e-09   9.926621e-01
+3.953415e-09   9.940688e-01
+4.013415e-09   1.000000e+00
+FALL
+57
+0.000000e+00   1.000000e+00
+1.767967e-10   9.324835e-01
+2.967967e-10   8.714437e-01
+3.567967e-10   8.354927e-01
+4.167967e-10   8.044140e-01
+4.767967e-10   7.833651e-01
+5.367967e-10   7.523768e-01
+6.567967e-10   6.793600e-01
+7.167967e-10   6.381495e-01
+7.767967e-10   6.162254e-01
+8.367967e-10   5.792735e-01
+8.967967e-10   5.365238e-01
+9.567967e-10   5.250008e-01
+1.016797e-09   4.896705e-01
+1.076797e-09   4.620468e-01
+1.196797e-09   4.139909e-01
+1.316797e-09   3.741951e-01
+1.376797e-09   3.616434e-01
+1.436797e-09   3.241571e-01
+1.496797e-09   3.243854e-01
+1.556797e-09   3.130326e-01
+1.616797e-09   2.866061e-01
+1.676797e-09   2.833304e-01
+1.796797e-09   2.469926e-01
+1.856797e-09   2.473772e-01
+1.916797e-09   2.324092e-01
+1.976797e-09   2.129271e-01
+2.036797e-09   2.086142e-01
+2.096797e-09   1.944628e-01
+2.276797e-09   1.696325e-01
+2.336797e-09   1.558717e-01
+2.396797e-09   1.540786e-01
+2.576797e-09   1.280188e-01
+2.696797e-09   1.196870e-01
+2.816797e-09   1.089757e-01
+2.876797e-09   1.075264e-01
+3.116797e-09   9.239789e-02
+3.236797e-09   8.621023e-02
+3.296797e-09   8.616495e-02
+3.356797e-09   7.852142e-02
+3.536797e-09   6.695238e-02
+3.596797e-09   6.060315e-02
+3.716797e-09   5.888493e-02
+3.776797e-09   5.511082e-02
+3.836797e-09   4.820366e-02
+3.896797e-09   4.402062e-02
+3.956797e-09   4.346183e-02
+4.016797e-09   3.672021e-02
+4.136797e-09   2.943857e-02
+4.196797e-09   3.080102e-02
+4.316797e-09   2.496701e-02
+4.376797e-09   1.695864e-02
+4.436797e-09   1.305208e-02
+4.496797e-09   1.516370e-02
+4.616797e-09   1.461149e-02
+4.736797e-09   7.189606e-03
+4.790492e-09   0.000000e+00
+END
+@IDBM:ACT_025_S0_tri.mac
+###############################################################################
+#
+# Header      : 1.0;
+# Filename   : ACT_025_S0_tri.mac;
+# FileRev     : 1.0;
+# Date        : Fri Jul  4 14:56:09 1997;
+# Permission  : ;
+# Simulator   : 2;
+# Modeltype   : 4;
+# Technology : ACT;
+# Changes     : None;
+# Notes       : generated for TI SN74ACT240 and comparable 3-state buffers
+#		of technology ACT, VCC = 5V, GND/VCC clamping diodes;
+#
+# RefSource
+#	Component    : SN74AC240;
+#	Manufacturer : TI;
+#	Buffername   : AC240_tri;
+#	Buffertype   : TRI->IN;
+#	Pins         : Outputs;
+#	Method       : MEASUREMENT;
+#	Copyright    : None;
+#	Disclaimer   : None;
+#	Notes        : GND and VCC Clamping Diodes;
+#
+# RefCondition
+#	Process       : Typical;
+#	Temperature   : 25.000;
+#	SupplyVolt    : 5.000;
+#	RefVolt       : None;
+#	GndPackage    : IMPLICIT;
+#	VccPackage    : IMPLICIT;
+#	SigPackage    : IMPLICIT;
+#	TermLineImp   : 50.000;
+#	TermLineDelay : 5.000e-09;
+#	Notes         : None;
+#
+# LinearModel
+#	Resistance  : 1.000000e+09;
+#	Capacitance : 8.000000e-12;
+#	Inductance  : None;
+#	GndClamp    : None;
+#	PowClamp    : None;
+#	Notes       : None;
+#
+############################################################################
+MOD_STRUC 4
+INPUT_CHAR
+45
+-1.000000e+00   -1.921000e-01
+-9.400000e-01   -1.264000e-01
+-8.800000e-01   -7.630000e-02
+-8.400000e-01   -4.920000e-02
+-8.100000e-01   -3.320000e-02
+-7.800000e-01   -2.110000e-02
+-7.600000e-01   -1.540000e-02
+-7.400000e-01   -1.120000e-02
+-7.200000e-01   -8.300000e-03
+-7.000000e-01   -6.300000e-03
+-6.700000e-01   -4.500000e-03
+-6.500000e-01   -3.600000e-03
+-6.300000e-01   -3.100000e-03
+-6.200000e-01   -2.700000e-03
+-5.900000e-01   -2.000000e-03
+-5.600000e-01   -1.400000e-03
+-5.500000e-01   -1.300000e-03
+-5.300000e-01   -9.000000e-04
+-5.200000e-01   -8.000000e-04
+-5.100000e-01   -6.000000e-04
+-5.000000e-01   -6.000000e-04
+-4.900000e-01   -4.000000e-04
+-4.800000e-01   -4.000000e-04
+-4.700000e-01   -3.000000e-04
+-4.600000e-01   -3.000000e-04
+-4.500000e-01   -2.000000e-04
+-4.400000e-01   0.000000e+00
+5.600000e+00   0.000000e+00
+5.610000e+00   3.000000e-04
+5.620000e+00   4.000000e-04
+5.640000e+00   8.000000e-04
+5.650000e+00   1.200000e-03
+5.660000e+00   1.700000e-03
+5.670000e+00   2.400000e-03
+5.680000e+00   3.300000e-03
+5.690000e+00   4.700000e-03
+5.700000e+00   6.300000e-03
+5.710000e+00   8.600000e-03
+5.720000e+00   1.150000e-02
+5.740000e+00   1.920000e-02
+5.760000e+00   2.980000e-02
+5.790000e+00   4.960000e-02
+5.940000e+00   1.603000e-01
+5.950000e+00   1.749000e-01
+5.970000e+00   1.892000e-01
+CAPACITY
+c0      8.000000e-12
+k1      0.000000e+00
+END
+@IDBM:HC_000_S0_in.mac
+###############################################################################
+#
+#  Header     : 1.0;
+#  Filename   : HC_000_S0_in.mac;
+#  FileRev    : 2.0;
+#  Date       : 02/03/1997;
+#  Permission : ;
+#  Simulator  : 2;
+#  Modeltype  : 0;
+#  Technology : HC;
+#  Changes    : None;
+#  Notes      : generated for TI SN74HC240 and comparable unidirectional
+#		buffers of technology HC; VCC= 5V, GND/VCC clamping diodes;
+#
+#  RefSource
+#     Component     : SN74HC240;
+#     Manufacturer  : TI;
+#     Buffername    : INBUF;
+#     Buffertype    : IN;
+#     Pins          : Inputs;
+#     Method        : Measurement;
+#     Copyright     : None;
+#     Disclaimer    : None;
+#     Notes         : GND and VCC Clamping Diodes;
+#
+#  RefCondition
+#     Process          : Typical;
+#     Temperature      : 25;
+#     SupplyVolt       : 5.000;
+#     RefVolt          : None;
+#     GndPackage       : Implicit;
+#     VccPackage       : Implicit;
+#     SigPackage       : Implicit;
+#     TermLineImp      : 50.000;
+#     TermLineDelay    : 5.000e-09;
+#     Notes            : None;
+#
+#  
+#  LinearModel                  
+#     Resistance    : 1e6;
+#     Capacitance   : 4e-12;
+#     Inductance    : None;
+#     GndClamp      : None;
+#     PowClamp      : None;
+#     Notes         : None;
+#  
+###############################################################################
+MOD_STRUC 0
+INPUT_CHAR
+anz_int  18
+uu    -2.000000e+01
+uo    -1.190000e+00
+i0    9.663103e-02
+ g    1.110345e-01
+uu    -1.190000e+00
+uo    -8.300000e-01
+i0    6.333611e-02
+ g    8.305556e-02
+uu    -8.300000e-01
+uo    -7.800000e-01
+i0    4.586000e-02
+ g    6.200000e-02
+uu    -7.800000e-01
+uo    -7.600000e-01
+i0    3.260000e-02
+ g    4.500000e-02
+uu    -7.600000e-01
+uo    -7.400000e-01
+i0    2.500000e-02
+ g    3.500000e-02
+uu    -7.400000e-01
+uo    -7.100000e-01
+i0    1.390000e-02
+ g    2.000000e-02
+uu    -7.100000e-01
+uo    -7.000000e-01
+i0    6.800000e-03
+ g    1.000000e-02
+uu    -7.000000e-01
+uo    -6.900000e-01
+i0    1.380000e-02
+ g    2.000000e-02
+uu    -6.900000e-01
+uo    5.720000e+00
+i0    0.000000e+00
+ g    0.000000e+00
+uu    5.720000e+00
+uo    5.750000e+00
+i0    -5.720000e-02
+ g    1.000000e-02
+uu    5.750000e+00
+uo    5.760000e+00
+i0    -1.147000e-01
+ g    2.000000e-02
+uu    5.760000e+00
+uo    5.780000e+00
+i0    -1.723000e-01
+ g    3.000000e-02
+uu    5.780000e+00
+uo    5.800000e+00
+i0    -2.590000e-01
+ g    4.500000e-02
+uu    5.800000e+00
+uo    5.820000e+00
+i0    -4.040000e-01
+ g    7.000000e-02
+uu    5.820000e+00
+uo    5.850000e+00
+i0    -6.562000e-01
+ g    1.133333e-01
+uu    5.850000e+00
+uo    5.890000e+00
+i0    -1.046200e+00
+ g    1.800000e-01
+uu    5.890000e+00
+uo    5.970000e+00
+i0    -1.627837e+00
+ g    2.787500e-01
+uu    5.970000e+00
+uo     2.000000e+01
+i0    -2.209338e+00
+ g    3.761538e-01
+
+CAPACITY
+c0e   4.e-12
+k1e   0.0
+END
+@IDBM:HC_040_S0_out.mac
+###############################################################################
+#
+#  Header     : 1.0;
+#  Filename   : HC_040_S0_out.mac;
+#  FileRev    : 2.0;
+#  Date       : 02/03/1997;
+#  Permission : ;
+#  Simulator  : 2;
+#  Modeltype  : 0;
+#  Technology : HC;
+#  Changes    : None;
+#  Notes      : generated for TI SN74HC240 and comparable 3-state output
+#		drivers of technology HC, VCC = 5V;
+#
+#  RefSource
+#     Component	    : SN74HC240;
+#     Manufacturer  : TI;
+#     Buffername    : OUTBUF;
+#     Buffertype    : OUT;
+#     Pins	    : Outputs;
+#     Method	    : Measurement;
+#     Copyright	    : None;
+#     Disclaimer    : None;
+#     Notes	    : None;
+#
+#  RefCondition
+#     Process       : Typical;
+#     Temperature   : 25;
+#     SupplyVolt    : 5.000;
+#     RefVolt       : None;
+#     GndPackage    : Implicit;
+#     VccPackage    : Implicit;
+#     SigPackage    : Implicit;
+#     TermLineImp   : 57;
+#     TermLineDelay : 6.8e-09;
+#     TermVolt      : NotUsed ;
+#     PullUpRes     : NotUsed;
+#     Notes         : None;
+#
+#  LinearModel
+#     VoltLow	    : 0.0;
+#     VoltHigh	    : 5.0;
+#     RiseTime	    : 4.1e-9;
+#     FallTime	    : 6.5e-9;
+#     ResLow	    : 34.4;
+#     ResHigh	    : 29.1;
+#     Capacitance   : 10e-12;
+#     Inductance    : None;
+#     GndClamp	    : None;
+#     PowClamp	    : None;
+#     Notes	    : Simulation results for a 50 Ohm transmission line load;
+#
+###############################################################################
+MOD_STRUC 0
+J0L_CHAR
+anz_int  14
+uu    -2.000000e+01
+uo    -7.900000e-01
+i0    -1.733611e-01
+ g    -2.591317e-01
+uu    -7.900000e-01
+uo    -6.600000e-01
+i0    -2.977690e-02
+ g    -7.737946e-02
+uu    -6.600000e-01
+uo    -7.000000e-02
+i0    -2.016946e-04
+ g    -3.256854e-02
+uu    -7.000000e-02
+uo    -2.000000e-02
+i0    -2.000000e-11
+ g    -2.968719e-02
+uu    -2.000000e-02
+uo    -1.000000e-02
+i0    1.999999e-04
+ g    -1.968719e-02
+uu    -1.000000e-02
+uo    0.000000e+00
+i0    -1.000000e-04
+ g    -4.968718e-02
+uu    0.000000e+00
+uo    1.000000e-02
+i0    -1.000000e-04
+ g    -2.968718e-02
+uu    1.000000e-02
+uo    2.000000e-02
+i0    -1.999999e-04
+ g    -1.968719e-02
+uu    2.000000e-02
+uo    2.500000e-01
+i0    -7.826089e-05
+ g    -2.577414e-02
+uu    2.500000e-01
+uo    9.600000e-01
+i0    -2.233802e-03
+ g    -1.715198e-02
+uu    9.600000e-01
+uo    1.960000e+00
+i0    -1.813601e-02
+ g    -5.871800e-04
+uu    1.960000e+00
+uo    4.880000e+00
+i0    -5.466987e-02
+ g    1.805254e-02
+uu    4.880000e+00
+uo    5.680000e+00
+i0    -3.824998e-02
+ g    1.468781e-02
+uu    5.680000e+00
+uo     2.000000e+01
+i0    9.853332e-01
+ g    -1.655205e-01
+J0H_CHAR
+anz_int  11
+uu    -2.000000e+01
+uo    -4.600000e-01
+i0    -2.894869e-02
+ g    -1.661023e-02
+uu    -4.600000e-01
+uo    2.640000e+00
+i0    -1.407118e-02
+ g    1.573217e-02
+uu    2.640000e+00
+uo    3.900000e+00
+i0    3.501686e-02
+ g    -2.861786e-03
+uu    3.900000e+00
+uo    4.730000e+00
+i0    1.001660e-01
+ g    -1.956670e-02
+uu    4.730000e+00
+uo    5.000000e+00
+i0    1.410285e-01
+ g    -2.820570e-02
+uu    5.000000e+00
+uo    5.010000e+00
+i0    1.484359e-01
+ g    -2.968718e-02
+uu    5.010000e+00
+uo    5.030000e+00
+i0    1.734859e-01
+ g    -3.468718e-02
+uu    5.030000e+00
+uo    5.480000e+00
+i0    1.684559e-01
+ g    -3.368719e-02
+uu    5.480000e+00
+uo    5.740000e+00
+i0    2.434898e-01
+ g    -4.737950e-02
+uu    5.740000e+00
+uo    5.830000e+00
+i0    1.130491e+00
+ g    -2.019093e-01
+uu    5.830000e+00
+uo     2.000000e+01
+i0    2.333507e+00
+ g    -4.082586e-01
+ENULL
+e0_low    0.000000e+00
+e0_high   5.000000e+00
+RNULL
+r0_low    4.923000e+01
+r0_high   4.923000e+01
+CAPACITY
+ca        1.000000e-11
+TIME_CONS
+OSCI_NO
+CONSTANT
+anz_t_const  1
+T1R  2.715821e-09
+T1F  1.256814e-09
+TIME_CHAR
+CONSTANT
+TAUVLH  1.697205e-09
+TAUPLH  1.000000e-12
+TAURLH  2.000000e-09
+TAUILH  1.943671e-09
+TAUVHL  5.423680e-09
+TAUPHL  1.000000e-12
+TAURHL  2.000000e-09
+TAUIHL  7.719103e-09
+END
+@IDBM:HC_024_S0_tri.mac
+###############################################################################
+#
+#  Header     : 1.0;
+#  Filename   : HC_024_S0_tri.mac;
+#  FileRev    : 2.0;
+#  Date       : 02/03/1997;
+#  Permission : ;
+#  Simulator  : 2;
+#  Modeltype  : 0;
+#  Technology : HC;
+#  Changes    : None;
+#  Notes      : generated for TI SN74HC240 and comparable 3-state buffers
+#		of technology HC, VCC = 5V, GND/VCC clamping diodes;
+#
+#  RefSource
+#     Component     : SN74HC240;
+#     Manufacturer  : TI;
+#     Buffername    : TRIBUF;
+#     Buffertype    : TRI->IN;
+#     Pins          : Outputs;
+#     Method        : Measurement;
+#     Copyright     : None;
+#     Disclaimer    : None;
+#     Notes         : GND and VCC Clamping Diodes;
+#
+#  RefCondition
+#     Process        : Typical;
+#     Temperature    : 25;
+#     SupplyVolt     : 5.000;
+#     RefVolt        : None;
+#     GndPackage     : Implicit;
+#     VccPackage     : Implicit;
+#     SigPackage     : Implicit;
+#     TermLineImp    : 50.000;
+#     TermLineDelay  : 5.000e-09;
+#     Notes          : None;
+#
+#  
+#  LinearModel                  
+#     Resistance    : 1e6;
+#     Capacitance   : 8e-12;
+#     Inductance    : None;
+#     GndClamp      : None;
+#     PowClamp      : None;
+#     Notes         : None;
+#  
+###############################################################################
+MOD_STRUC 0
+INPUT_CHAR
+anz_int  18
+uu    -2.000000e+01
+uo    -1.190000e+00
+i0    9.663103e-02
+ g    1.110345e-01
+uu    -1.190000e+00
+uo    -8.300000e-01
+i0    6.333611e-02
+ g    8.305556e-02
+uu    -8.300000e-01
+uo    -7.800000e-01
+i0    4.586000e-02
+ g    6.200000e-02
+uu    -7.800000e-01
+uo    -7.600000e-01
+i0    3.260000e-02
+ g    4.500000e-02
+uu    -7.600000e-01
+uo    -7.400000e-01
+i0    2.500000e-02
+ g    3.500000e-02
+uu    -7.400000e-01
+uo    -7.100000e-01
+i0    1.390000e-02
+ g    2.000000e-02
+uu    -7.100000e-01
+uo    -7.000000e-01
+i0    6.800000e-03
+ g    1.000000e-02
+uu    -7.000000e-01
+uo    -6.900000e-01
+i0    1.380000e-02
+ g    2.000000e-02
+uu    -6.900000e-01
+uo    5.720000e+00
+i0    0.000000e+00
+ g    0.000000e+00
+uu    5.720000e+00
+uo    5.750000e+00
+i0    -5.720000e-02
+ g    1.000000e-02
+uu    5.750000e+00
+uo    5.760000e+00
+i0    -1.147000e-01
+ g    2.000000e-02
+uu    5.760000e+00
+uo    5.780000e+00
+i0    -1.723000e-01
+ g    3.000000e-02
+uu    5.780000e+00
+uo    5.800000e+00
+i0    -2.590000e-01
+ g    4.500000e-02
+uu    5.800000e+00
+uo    5.820000e+00
+i0    -4.040000e-01
+ g    7.000000e-02
+uu    5.820000e+00
+uo    5.850000e+00
+i0    -6.562000e-01
+ g    1.133333e-01
+uu    5.850000e+00
+uo    5.890000e+00
+i0    -1.046200e+00
+ g    1.800000e-01
+uu    5.890000e+00
+uo    5.970000e+00
+i0    -1.627837e+00
+ g    2.787500e-01
+uu    5.970000e+00
+uo     2.000000e+01
+i0    -2.209338e+00
+ g    3.761538e-01
+CAPACITY
+c0e   8.e-12
+k1e   0.0
+END
+@IDBM:HCT_000_S0_in.mac
+###############################################################################
+#
+#  Header     : 1.0;
+#  Filename   : HCT_000_S0_in.mac;
+#  FileRev    : 2.0;
+#  Date       : 02/03/1997;
+#  Permission : ;
+#  Simulator  : 2;
+#  Modeltype  : 0;
+#  Technology : HCT;
+#  Changes    : None;
+#  Notes      : generated for TI SN74HCT240 and comparable unidirectional
+#		buffers of technology HCT; VCC= 5V, GND/VCC clamping diodes;
+#
+#  RefSource
+#     Component     : SN74HC240;
+#     Manufacturer  : TI;
+#     Buffername    : INBUF;
+#     Buffertype    : IN;
+#     Pins          : Inputs;
+#     Method        : Measurement;
+#     Copyright     : None;
+#     Disclaimer    : None;
+#     Notes         : GND and VCC Clamping Diodes;
+#
+#  RefCondition
+#     Process          : Typical;
+#     Temperature      : 25;
+#     SupplyVolt       : 5.000;
+#     RefVolt          : None;
+#     GndPackage       : Implicit;
+#     VccPackage       : Implicit;
+#     SigPackage       : Implicit;
+#     TermLineImp      : 50.000;
+#     TermLineDelay    : 5.000e-09;
+#     Notes            : None;
+#
+#  
+#  LinearModel                  
+#     Resistance    : 1e6;
+#     Capacitance   : 4e-12;
+#     Inductance    : None;
+#     GndClamp      : None;
+#     PowClamp      : None;
+#     Notes         : None;
+#  
+###############################################################################
+MOD_STRUC 0
+INPUT_CHAR
+anz_int  18
+uu    -2.000000e+01
+uo    -1.190000e+00
+i0    9.663103e-02
+ g    1.110345e-01
+uu    -1.190000e+00
+uo    -8.300000e-01
+i0    6.333611e-02
+ g    8.305556e-02
+uu    -8.300000e-01
+uo    -7.800000e-01
+i0    4.586000e-02
+ g    6.200000e-02
+uu    -7.800000e-01
+uo    -7.600000e-01
+i0    3.260000e-02
+ g    4.500000e-02
+uu    -7.600000e-01
+uo    -7.400000e-01
+i0    2.500000e-02
+ g    3.500000e-02
+uu    -7.400000e-01
+uo    -7.100000e-01
+i0    1.390000e-02
+ g    2.000000e-02
+uu    -7.100000e-01
+uo    -7.000000e-01
+i0    6.800000e-03
+ g    1.000000e-02
+uu    -7.000000e-01
+uo    -6.900000e-01
+i0    1.380000e-02
+ g    2.000000e-02
+uu    -6.900000e-01
+uo    5.720000e+00
+i0    0.000000e+00
+ g    0.000000e+00
+uu    5.720000e+00
+uo    5.750000e+00
+i0    -5.720000e-02
+ g    1.000000e-02
+uu    5.750000e+00
+uo    5.760000e+00
+i0    -1.147000e-01
+ g    2.000000e-02
+uu    5.760000e+00
+uo    5.780000e+00
+i0    -1.723000e-01
+ g    3.000000e-02
+uu    5.780000e+00
+uo    5.800000e+00
+i0    -2.590000e-01
+ g    4.500000e-02
+uu    5.800000e+00
+uo    5.820000e+00
+i0    -4.040000e-01
+ g    7.000000e-02
+uu    5.820000e+00
+uo    5.850000e+00
+i0    -6.562000e-01
+ g    1.133333e-01
+uu    5.850000e+00
+uo    5.890000e+00
+i0    -1.046200e+00
+ g    1.800000e-01
+uu    5.890000e+00
+uo    5.970000e+00
+i0    -1.627837e+00
+ g    2.787500e-01
+uu    5.970000e+00
+uo     2.000000e+01
+i0    -2.209338e+00
+ g    3.761538e-01
+
+CAPACITY
+c0e   4.e-12
+k1e   0.0
+END
+@IDBM:HCT_040_S0_out.mac
+###############################################################################
+#
+#  Header     : 1.0;
+#  Filename   : HCT_040_S0_out.mac;
+#  FileRev    : 2.0;
+#  Date       : 02/03/1997;
+#  Permission : ;
+#  Simulator  : 2;
+#  Modeltype  : 0;
+#  Technology : HCT;
+#  Changes    : None;
+#  Notes      : generated for TI SN74HCT240 and comparable 3-state output
+#		drivers of technology HCT, VCC = 5V;
+#
+#  RefSource
+#     Component	    : SN74HC240;
+#     Manufacturer  : TI;
+#     Buffername    : OUTBUF;
+#     Buffertype    : OUT;
+#     Pins	    : Outputs;
+#     Method	    : Measurement;
+#     Copyright	    : None;
+#     Disclaimer    : None;
+#     Notes	    : None;
+#
+#  RefCondition
+#     Process       : Typical;
+#     Temperature   : 25;
+#     SupplyVolt    : 5.000;
+#     RefVolt       : None;
+#     GndPackage    : Implicit;
+#     VccPackage    : Implicit;
+#     SigPackage    : Implicit;
+#     TermLineImp   : 57;
+#     TermLineDelay : 6.8e-09;
+#     TermVolt      : NotUsed ;
+#     PullUpRes     : NotUsed;
+#     Notes         : None;
+#
+#  LinearModel
+#     VoltLow	    : 0.0;
+#     VoltHigh	    : 5.0;
+#     RiseTime	    : 4.1e-9;
+#     FallTime	    : 6.5e-9;
+#     ResLow	    : 34.4;
+#     ResHigh	    : 29.1;
+#     Capacitance   : 10e-12;
+#     Inductance    : None;
+#     GndClamp	    : None;
+#     PowClamp	    : None;
+#     Notes	    : Simulation results for a 50 Ohm transmission line load;
+#
+###############################################################################
+MOD_STRUC 0
+J0L_CHAR
+anz_int  14
+uu    -2.000000e+01
+uo    -7.900000e-01
+i0    -1.733611e-01
+ g    -2.591317e-01
+uu    -7.900000e-01
+uo    -6.600000e-01
+i0    -2.977690e-02
+ g    -7.737946e-02
+uu    -6.600000e-01
+uo    -7.000000e-02
+i0    -2.016946e-04
+ g    -3.256854e-02
+uu    -7.000000e-02
+uo    -2.000000e-02
+i0    -2.000000e-11
+ g    -2.968719e-02
+uu    -2.000000e-02
+uo    -1.000000e-02
+i0    1.999999e-04
+ g    -1.968719e-02
+uu    -1.000000e-02
+uo    0.000000e+00
+i0    -1.000000e-04
+ g    -4.968718e-02
+uu    0.000000e+00
+uo    1.000000e-02
+i0    -1.000000e-04
+ g    -2.968718e-02
+uu    1.000000e-02
+uo    2.000000e-02
+i0    -1.999999e-04
+ g    -1.968719e-02
+uu    2.000000e-02
+uo    2.500000e-01
+i0    -7.826089e-05
+ g    -2.577414e-02
+uu    2.500000e-01
+uo    9.600000e-01
+i0    -2.233802e-03
+ g    -1.715198e-02
+uu    9.600000e-01
+uo    1.960000e+00
+i0    -1.813601e-02
+ g    -5.871800e-04
+uu    1.960000e+00
+uo    4.880000e+00
+i0    -5.466987e-02
+ g    1.805254e-02
+uu    4.880000e+00
+uo    5.680000e+00
+i0    -3.824998e-02
+ g    1.468781e-02
+uu    5.680000e+00
+uo     2.000000e+01
+i0    9.853332e-01
+ g    -1.655205e-01
+J0H_CHAR
+anz_int  11
+uu    -2.000000e+01
+uo    -4.600000e-01
+i0    -2.894869e-02
+ g    -1.661023e-02
+uu    -4.600000e-01
+uo    2.640000e+00
+i0    -1.407118e-02
+ g    1.573217e-02
+uu    2.640000e+00
+uo    3.900000e+00
+i0    3.501686e-02
+ g    -2.861786e-03
+uu    3.900000e+00
+uo    4.730000e+00
+i0    1.001660e-01
+ g    -1.956670e-02
+uu    4.730000e+00
+uo    5.000000e+00
+i0    1.410285e-01
+ g    -2.820570e-02
+uu    5.000000e+00
+uo    5.010000e+00
+i0    1.484359e-01
+ g    -2.968718e-02
+uu    5.010000e+00
+uo    5.030000e+00
+i0    1.734859e-01
+ g    -3.468718e-02
+uu    5.030000e+00
+uo    5.480000e+00
+i0    1.684559e-01
+ g    -3.368719e-02
+uu    5.480000e+00
+uo    5.740000e+00
+i0    2.434898e-01
+ g    -4.737950e-02
+uu    5.740000e+00
+uo    5.830000e+00
+i0    1.130491e+00
+ g    -2.019093e-01
+uu    5.830000e+00
+uo     2.000000e+01
+i0    2.333507e+00
+ g    -4.082586e-01
+ENULL
+e0_low    0.000000e+00
+e0_high   5.000000e+00
+RNULL
+r0_low    4.923000e+01
+r0_high   4.923000e+01
+CAPACITY
+ca        1.000000e-11
+TIME_CONS
+OSCI_NO
+CONSTANT
+anz_t_const  1
+T1R  2.715821e-09
+T1F  1.256814e-09
+TIME_CHAR
+CONSTANT
+TAUVLH  1.697205e-09
+TAUPLH  1.000000e-12
+TAURLH  2.000000e-09
+TAUILH  1.943671e-09
+TAUVHL  5.423680e-09
+TAUPHL  1.000000e-12
+TAURHL  2.000000e-09
+TAUIHL  7.719103e-09
+END
+@IDBM:HCT_024_S0_tri.mac
+###############################################################################
+#
+#  Header     : 1.0;
+#  Filename   : HCT_024_S0_tri.mac;
+#  FileRev    : 2.0;
+#  Date       : 02/03/1997;
+#  Permission : ;
+#  Simulator  : 2;
+#  Modeltype  : 0;
+#  Technology : HCT;
+#  Changes    : None;
+#  Notes      : generated for TI SN74HCT240 and comparable 3-state buffers
+#		of technology HCT, VCC = 5V, GND/VCC clamping diodes;
+#
+#  RefSource
+#     Component     : SN74HC240;
+#     Manufacturer  : TI;
+#     Buffername    : TRIBUF;
+#     Buffertype    : TRI->IN;
+#     Pins          : Outputs;
+#     Method        : Measurement;
+#     Copyright     : None;
+#     Disclaimer    : None;
+#     Notes         : GND and VCC Clamping Diodes;
+#
+#  RefCondition
+#     Process        : Typical;
+#     Temperature    : 25;
+#     SupplyVolt     : 5.000;
+#     RefVolt        : None;
+#     GndPackage     : Implicit;
+#     VccPackage     : Implicit;
+#     SigPackage     : Implicit;
+#     TermLineImp    : 50.000;
+#     TermLineDelay  : 5.000e-09;
+#     Notes          : None;
+#
+#  
+#  LinearModel                  
+#     Resistance    : 1e6;
+#     Capacitance   : 8e-12;
+#     Inductance    : None;
+#     GndClamp      : None;
+#     PowClamp      : None;
+#     Notes         : None;
+#  
+###############################################################################
+MOD_STRUC 0
+INPUT_CHAR
+anz_int  18
+uu    -2.000000e+01
+uo    -1.190000e+00
+i0    9.663103e-02
+ g    1.110345e-01
+uu    -1.190000e+00
+uo    -8.300000e-01
+i0    6.333611e-02
+ g    8.305556e-02
+uu    -8.300000e-01
+uo    -7.800000e-01
+i0    4.586000e-02
+ g    6.200000e-02
+uu    -7.800000e-01
+uo    -7.600000e-01
+i0    3.260000e-02
+ g    4.500000e-02
+uu    -7.600000e-01
+uo    -7.400000e-01
+i0    2.500000e-02
+ g    3.500000e-02
+uu    -7.400000e-01
+uo    -7.100000e-01
+i0    1.390000e-02
+ g    2.000000e-02
+uu    -7.100000e-01
+uo    -7.000000e-01
+i0    6.800000e-03
+ g    1.000000e-02
+uu    -7.000000e-01
+uo    -6.900000e-01
+i0    1.380000e-02
+ g    2.000000e-02
+uu    -6.900000e-01
+uo    5.720000e+00
+i0    0.000000e+00
+ g    0.000000e+00
+uu    5.720000e+00
+uo    5.750000e+00
+i0    -5.720000e-02
+ g    1.000000e-02
+uu    5.750000e+00
+uo    5.760000e+00
+i0    -1.147000e-01
+ g    2.000000e-02
+uu    5.760000e+00
+uo    5.780000e+00
+i0    -1.723000e-01
+ g    3.000000e-02
+uu    5.780000e+00
+uo    5.800000e+00
+i0    -2.590000e-01
+ g    4.500000e-02
+uu    5.800000e+00
+uo    5.820000e+00
+i0    -4.040000e-01
+ g    7.000000e-02
+uu    5.820000e+00
+uo    5.850000e+00
+i0    -6.562000e-01
+ g    1.133333e-01
+uu    5.850000e+00
+uo    5.890000e+00
+i0    -1.046200e+00
+ g    1.800000e-01
+uu    5.890000e+00
+uo    5.970000e+00
+i0    -1.627837e+00
+ g    2.787500e-01
+uu    5.970000e+00
+uo     2.000000e+01
+i0    -2.209338e+00
+ g    3.761538e-01
+CAPACITY
+c0e   8.e-12
+k1e   0.0
+END
+@IDBM:LS_000_S0_in.mac
+###############################################################################
+#
+#  Header     : 1.0;
+#  Filename   : LS_000_S0_in.mac;
+#  FileRev    : 2.0;
+#  Date       : 02/03/1997;
+#  Permission : ;
+#  Simulator  : 2;
+#  Modeltype  : 0;
+#  Technology : LS;
+#  Changes    : None;
+#  Notes      : generated for TI SN74LS240 and comparable unidirectional
+#		buffers of technology LS; VCC= 5V, GND clamping diodes;
+#
+#  RefSource
+#     Component     : SN74LS240;
+#     Manufacturer  : TI;
+#     Buffername    : INBUF;
+#     Buffertype    : IN;
+#     Pins          : Inputs;
+#     Method        : Measurement;
+#     Copyright     : None;
+#     Disclaimer    : None;
+#     Notes         : GND Clamping Diodes;
+#
+#  RefCondition
+#     Process       : Typical;
+#     Temperature   : 25;
+#     SupplyVolt    : 5.000;
+#     RefVolt       : None;
+#     GndPackage    : Implicit;
+#     VccPackage    : Implicit;
+#     SigPackage    : Implicit;
+#     TermLineImp   : 50.000;
+#     TermLineDelay : 5.000e-09;
+#     Notes         : None;
+#
+#  
+#  LinearModel                  
+#     Resistance    : 1e6;
+#     Capacitance   : 4e-12;
+#     Inductance    : None;
+#     GndClamp      : None;
+#     PowClamp      : None;
+#     Notes         : None;
+#  
+###############################################################################
+MOD_STRUC 0
+INPUT_CHAR
+anz_int  19
+uu    -2.000000e+01
+uo    -1.010000e+00
+i0    2.120680e-01
+ g    2.468000e-01
+uu    -1.010000e+00
+uo    -8.800000e-01
+i0    1.251769e-01
+ g    1.607692e-01
+uu    -8.800000e-01
+uo    -8.000000e-01
+i0    7.280000e-02
+ g    1.012500e-01
+uu    -8.000000e-01
+uo    -7.400000e-01
+i0    4.113333e-02
+ g    6.166667e-02
+uu    -7.400000e-01
+uo    -6.900000e-01
+i0    2.362000e-02
+ g    3.800000e-02
+uu    -6.900000e-01
+uo    -6.400000e-01
+i0    1.258000e-02
+ g    2.200000e-02
+uu    -6.400000e-01
+uo    -6.000000e-01
+i0    6.500000e-03
+ g    1.250000e-02
+uu    -6.000000e-01
+uo    -5.500000e-01
+i0    5.000000e-03
+ g    1.000000e-02
+uu    -5.500000e-01
+uo    -5.400000e-01
+i0    -5.000000e-04
+ g    0.000000e+00
+uu    -5.400000e-01
+uo    -5.300000e-01
+i0    4.900000e-03
+ g    1.000000e-02
+uu    -5.300000e-01
+uo    -5.200000e-01
+i0    -4.000000e-04
+ g    0.000000e+00
+uu    -5.200000e-01
+uo    -5.100000e-01
+i0    4.800000e-03
+ g    1.000000e-02
+uu    -5.100000e-01
+uo    -4.800000e-01
+i0    -3.000000e-04
+ g    0.000000e+00
+uu    -4.800000e-01
+uo    -4.700000e-01
+i0    4.500000e-03
+ g    1.000000e-02
+uu    -4.700000e-01
+uo    1.070000e+00
+i0    -2.000000e-04
+ g    0.000000e+00
+uu    1.070000e+00
+uo    1.100000e+00
+i0    -3.766667e-03
+ g    3.333333e-03
+uu    1.100000e+00
+uo    1.160000e+00
+i0    -1.000000e-04
+ g    0.000000e+00
+uu    1.160000e+00
+uo    1.190000e+00
+i0    -3.966667e-03
+ g    3.333333e-03
+uu    1.190000e+00
+uo     2.000000e+01
+i0    -0.000000e+00
+ g    0.000000e+00
+CAPACITY
+c0e   4.e-12
+k1e   0.0
+END
+@IDBM:LS_040_S0_out.mac
+###############################################################################
+#
+#  Header     : 1.0;
+#  Filename   : LS_040_S0_out.mac;
+#  FileRev    : 2.0;
+#  Date       : 02/03/1997;
+#  Permission : ;
+#  Simulator  : 2;
+#  Modeltype  : 0;
+#  Technology : LS;
+#  Changes    : None;
+#  Notes      : generated for TI SN74LS240 and comparable 3-state output
+#		drivers of technology LS, VCC = 5V;
+#
+#  RefSource
+#     Component     : SN74LS240;
+#     Manufacturer  : TI;
+#     Buffername    : OUTBUF;
+#     Buffertype    : OUT;
+#     Pins          : Outputs;
+#     Method        : Measurement;
+#     Copyright     : None;
+#     Disclaimer    : None;
+#     Notes         : None;
+#
+#  RefCondition
+#     Process       : Typical;
+#     Temperature   : 25;
+#     SupplyVolt    : 5.000;
+#     RefVolt       : None;
+#     GndPackage    : Implicit;
+#     VccPackage    : Implicit;
+#     SigPackage    : Implicit;
+#     TermLineImp   : 57;
+#     TermLineDelay : 6.8e-09;
+#     TermVolt      : NotUsed;
+#     PullUpRes     : NotUsed;
+#     Notes         : None;
+#
+#  LinearModel
+#     VoltLow       : 0.1;
+#     VoltHigh      : 3.8;
+#     RiseTime      : 3.4e-9;
+#     FallTime      : 4.3e-9;
+#     ResLow        : 5.4;
+#     ResHigh       : 60.8;
+#     Capacitance   : 10e-12;
+#     Inductance    : None;
+#     GndClamp      : None;
+#     PowClamp      : None;
+#     Notes         : Simulation results for a 50 Ohm transmission line load;
+#
+###############################################################################
+MOD_STRUC 0
+J0L_CHAR
+anz_int  16
+uu    -2.000000e+01
+uo    -9.900000e-01
+i0    -1.898740e-01
+ g    3.421524e-02
+uu    -9.900000e-01
+uo    -8.100000e-01
+i0    -1.277237e-01
+ g    9.699333e-02
+uu    -8.100000e-01
+uo    -7.200000e-01
+i0    -8.857460e-02
+ g    1.453256e-01
+uu    -7.200000e-01
+uo    -6.600000e-01
+i0    -6.297420e-02
+ g    1.808817e-01
+uu    -6.600000e-01
+uo    -5.800000e-01
+i0    -4.592338e-02
+ g    2.067162e-01
+uu    -5.800000e-01
+uo    -3.300000e-01
+i0    -3.670198e-02
+ g    2.226152e-01
+uu    -3.300000e-01
+uo    1.000000e-02
+i0    -3.656223e-02
+ g    2.230387e-01
+uu    1.000000e-02
+uo    6.000000e-02
+i0    -3.647399e-02
+ g    2.142152e-01
+uu    6.000000e-02
+uo    9.000000e-02
+i0    -3.547400e-02
+ g    1.975487e-01
+uu    9.000000e-02
+uo    1.100000e-01
+i0    -3.382402e-02
+ g    1.792155e-01
+uu    1.100000e-01
+uo    1.200000e-01
+i0    -3.327396e-02
+ g    1.742150e-01
+uu    1.200000e-01
+uo    1.400000e-01
+i0    -2.967398e-02
+ g    1.442151e-01
+uu    1.400000e-01
+uo    1.600000e-01
+i0    -2.687399e-02
+ g    1.242153e-01
+uu    1.600000e-01
+uo    2.000000e-01
+i0    -2.047399e-02
+ g    8.421525e-02
+uu    2.000000e-01
+uo    3.200000e-01
+i0    -9.640658e-03
+ g    3.004858e-02
+uu    3.200000e-01
+uo     2.000000e+01
+i0    -2.562472e-06
+ g    -7.046762e-05
+J0H_CHAR
+anz_int  18
+uu    -2.000000e+01
+uo    -1.040000e+00
+i0    -2.359380e-01
+ g    -1.976318e-01
+uu    -1.040000e+00
+uo    -8.400000e-01
+i0    -1.580247e-01
+ g    -1.227151e-01
+uu    -8.400000e-01
+uo    -8.200000e-01
+i0    -1.303046e-01
+ g    -8.971500e-02
+uu    -8.200000e-01
+uo    -8.000000e-01
+i0    8.003954e-01
+ g    1.045285e+00
+uu    -8.000000e-01
+uo    -7.400000e-01
+i0    1.203953e-01
+ g    1.952848e-01
+uu    -7.400000e-01
+uo    -7.200000e-01
+i0    8.677955e-01
+ g    1.205285e+00
+uu    -7.200000e-01
+uo    3.140000e+00
+i0    -9.852417e-06
+ g    -6.335777e-08
+uu    3.140000e+00
+uo    3.410000e+00
+i0    1.595829e-02
+ g    -5.085458e-03
+uu    3.410000e+00
+uo    3.440000e+00
+i0    1.283620e-01
+ g    -3.804843e-02
+uu    3.440000e+00
+uo    3.470000e+00
+i0    2.315620e-01
+ g    -6.804843e-02
+uu    3.470000e+00
+uo    3.490000e+00
+i0    1.505954e-01
+ g    -4.471510e-02
+uu    3.490000e+00
+uo    3.510000e+00
+i0    8.079519e-02
+ g    -2.471505e-02
+uu    3.510000e+00
+uo    3.520000e+00
+i0    4.569537e-02
+ g    -1.471510e-02
+uu    3.520000e+00
+uo    3.530000e+00
+i0    1.049537e-02
+ g    -4.715100e-03
+uu    3.530000e+00
+uo    3.570000e+00
+i0    -2.480463e-02
+ g    5.284900e-03
+uu    3.570000e+00
+uo    3.800000e+00
+i0    -6.050468e-02
+ g    1.528491e-02
+uu    3.800000e+00
+uo    3.810000e+00
+i0    -2.250463e-02
+ g    5.284900e-03
+uu    3.810000e+00
+uo     2.000000e+01
+i0    -6.060466e-02
+ g    1.528491e-02
+ENULL
+e0_low    1.765000e-01
+e0_high   3.965000e+00
+RNULL
+r0_low    4.460000e+00
+r0_high   6.542400e+01
+CAPACITY
+ca        1.000000e-11
+TIME_CONS
+OSCI_NO
+CONSTANT
+anz_t_const  1
+T1R  1.873524e-09
+T1F  2.607560e-09
+TIME_CHAR
+CONSTANT
+TAUVLH  1.395004e-09
+TAUPLH  1.000000e-12
+TAURLH  1.943861e-09
+TAUILH  9.999063e-10
+TAUVHL  2.936814e-09
+TAUPHL  1.000000e-12
+TAURHL  5.499913e-09
+TAUIHL  4.116575e-09
+END
+@IDBM:LS_025_S0_tri.mac
+###############################################################################
+#
+#  Header     : 1.0;
+#  Filename   : LS_025_S0_tri.mac;
+#  FileRev    : 2.0;
+#  Date       : 02/03/1997;
+#  Permission : ;
+#  Simulator  : 2;
+#  Modeltype  : 0;
+#  Technology : LS;
+#  Changes    : None;
+#  Notes      : generated for TI SN74LS240 and comparable 3-state buffers
+#		of technology LS, VCC = 5V, GND/VCC clamping diodes;
+#
+#  RefSource
+#     Component     : SN74LS240;
+#     Manufacturer  : TI;
+#     Buffername    : TRIBUF;
+#     Buffertype    : TRI->IN;
+#     Pins          : Outputs;
+#     Method        : Measurement;
+#     Copyright     : None;
+#     Disclaimer    : None;
+#     Notes         : GND Clamping Diodes;
+#
+#  RefCondition
+#     Process       : Typical;
+#     Temperature   : 25;
+#     SupplyVolt    : 5.000;
+#     RefVolt       : None;
+#     GndPackage    : Implicit;
+#     VccPackage    : Implicit;
+#     SigPackage    : Implicit;
+#     TermLineImp   : 50.000;
+#     TermLineDelay : 5.000e-09;
+#     Notes         : None;
+#
+#  
+#  LinearModel                  
+#     Resistance    : 1e6;
+#     Capacitance   : 8e-12;
+#     Inductance    : None;
+#     GndClamp      : None;
+#     PowClamp      : None;
+#     Notes         : None;
+#  
+###############################################################################
+MOD_STRUC 0
+INPUT_CHAR
+anz_int  19
+uu    -2.000000e+01
+uo    -1.010000e+00
+i0    2.120680e-01
+ g    2.468000e-01
+uu    -1.010000e+00
+uo    -8.800000e-01
+i0    1.251769e-01
+ g    1.607692e-01
+uu    -8.800000e-01
+uo    -8.000000e-01
+i0    7.280000e-02
+ g    1.012500e-01
+uu    -8.000000e-01
+uo    -7.400000e-01
+i0    4.113333e-02
+ g    6.166667e-02
+uu    -7.400000e-01
+uo    -6.900000e-01
+i0    2.362000e-02
+ g    3.800000e-02
+uu    -6.900000e-01
+uo    -6.400000e-01
+i0    1.258000e-02
+ g    2.200000e-02
+uu    -6.400000e-01
+uo    -6.000000e-01
+i0    6.500000e-03
+ g    1.250000e-02
+uu    -6.000000e-01
+uo    -5.500000e-01
+i0    5.000000e-03
+ g    1.000000e-02
+uu    -5.500000e-01
+uo    -5.400000e-01
+i0    -5.000000e-04
+ g    0.000000e+00
+uu    -5.400000e-01
+uo    -5.300000e-01
+i0    4.900000e-03
+ g    1.000000e-02
+uu    -5.300000e-01
+uo    -5.200000e-01
+i0    -4.000000e-04
+ g    0.000000e+00
+uu    -5.200000e-01
+uo    -5.100000e-01
+i0    4.800000e-03
+ g    1.000000e-02
+uu    -5.100000e-01
+uo    -4.800000e-01
+i0    -3.000000e-04
+ g    0.000000e+00
+uu    -4.800000e-01
+uo    -4.700000e-01
+i0    4.500000e-03
+ g    1.000000e-02
+uu    -4.700000e-01
+uo    1.070000e+00
+i0    -2.000000e-04
+ g    0.000000e+00
+uu    1.070000e+00
+uo    1.100000e+00
+i0    -3.766667e-03
+ g    3.333333e-03
+uu    1.100000e+00
+uo    1.160000e+00
+i0    -1.000000e-04
+ g    0.000000e+00
+uu    1.160000e+00
+uo    1.190000e+00
+i0    -3.966667e-03
+ g    3.333333e-03
+uu    1.190000e+00
+uo     2.000000e+01
+i0    -0.000000e+00
+ g    0.000000e+00
+CAPACITY
+c0e   8.e-12
+k1e   0.0
+END
