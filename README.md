@@ -1,12 +1,9 @@
 # Altium-Designer-Libraries
 ## 机械层使用说明
 > M1 Board Outline  
-> M2 3DBody Top  
-> M3 3DBody Bottom  
-> M4 Components Shape Top  
-> M5 Components Shage Bottom  
-> M6 Components Center Top  
-> M7 Components Center Bottom  
-> M15 Assembly Top (Designator)  
-> M16 Assembly Bottom (Designator)  
+> M2-M3 Components 3DBody 
+> M4-M5 Components Shape 
+> M6-M7 Components Center  
+> M8-M9 Components Value (Consolas:25mil - 5mil)
+> M15-M16 Components Designator 
 > M17 Title Sheet  
