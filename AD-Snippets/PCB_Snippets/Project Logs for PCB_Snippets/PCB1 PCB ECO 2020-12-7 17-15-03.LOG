@@ -1,0 +1,114 @@
+Added Component: Designator=C1(0603C)
+Added Component: Designator=C2(0402C)
+Added Component: Designator=C3(0402C)
+Added Component: Designator=C4(0603C)
+Added Component: Designator=C5(0402C)
+Added Component: Designator=C6(0402C)
+Added Component: Designator=C7(0402C)
+Added Component: Designator=C8(0603C)
+Added Component: Designator=C9(0402C)
+Added Component: Designator=C10(0402C)
+Added Component: Designator=C11(0402C)
+Added Component: Designator=C12(0603C)
+Added Component: Designator=C13(0402C)
+Added Component: Designator=C14(0603C)
+Added Component: Designator=C15(0402C)
+Added Component: Designator=IC1(SOT95P280X145-5N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "TLV71333PDBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/tlv71333pdbvr/texas-instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/gpn/tlv713p"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.45mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "TLV71333PDBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-TLV71333PDBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV71333PDBVR?qs=FBI%252BX3tnPf1lCQ%252BDbwaFmA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=IC2(SOP65P640X120-20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "PCM5102APWR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/pcm5102apwr/texas-instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/2/PCM5102APWR.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PCM5102APWR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-PCM5102APWR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM5102APWR?qs=E2%2FxqS9xjzrfECkwEYoiyg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R1(0402R)
+Added Component: Designator=R2(0402R)
+Added Component: Designator=R3(0402R)
+Added Pin To Net: NetName=3.3V Pin=C1-2
+Added Pin To Net: NetName=3.3V Pin=C2-2
+Added Pin To Net: NetName=3.3V Pin=C7-1
+Added Pin To Net: NetName=3.3V Pin=C8-1
+Added Pin To Net: NetName=3.3V Pin=IC1-1
+Added Pin To Net: NetName=3.3V Pin=IC1-3
+Added Pin To Net: NetName=3.3V Pin=IC2-20
+Added Pin To Net: NetName=3.3V Pin=R3-1
+Added Net: Name=3.3V
+Added Pin To Net: NetName=A3.3V Pin=C3-2
+Added Pin To Net: NetName=A3.3V Pin=C4-1
+Added Pin To Net: NetName=A3.3V Pin=C5-1
+Added Pin To Net: NetName=A3.3V Pin=C14-2
+Added Pin To Net: NetName=A3.3V Pin=C15-2
+Added Pin To Net: NetName=A3.3V Pin=IC1-5
+Added Pin To Net: NetName=A3.3V Pin=IC2-1
+Added Pin To Net: NetName=A3.3V Pin=IC2-8
+Added Net: Name=A3.3V
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=GND Pin=IC1-2
+Added Pin To Net: NetName=GND Pin=IC2-3
+Added Pin To Net: NetName=GND Pin=IC2-9
+Added Pin To Net: NetName=GND Pin=IC2-10
+Added Pin To Net: NetName=GND Pin=IC2-11
+Added Pin To Net: NetName=GND Pin=IC2-16
+Added Pin To Net: NetName=GND Pin=IC2-19
+Added Net: Name=GND
+Added Pin To Net: NetName=I2S_BCLK Pin=IC2-13
+Added Net: Name=I2S_BCLK
+Added Pin To Net: NetName=I2S_LRCLK Pin=IC2-15
+Added Net: Name=I2S_LRCLK
+Added Pin To Net: NetName=I2S_SDOUT Pin=IC2-14
+Added Net: Name=I2S_SDOUT
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_1 Pin=IC2-2
+Added Net: Name=NetC6_1
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC6_2 Pin=IC2-4
+Added Net: Name=NetC6_2
+Added Pin To Net: NetName=NetC10_1 Pin=C10-1
+Added Pin To Net: NetName=NetC10_1 Pin=IC2-5
+Added Net: Name=NetC10_1
+Added Pin To Net: NetName=NetC11_2 Pin=C11-2
+Added Pin To Net: NetName=NetC11_2 Pin=C12-2
+Added Pin To Net: NetName=NetC11_2 Pin=IC2-18
+Added Net: Name=NetC11_2
+Added Pin To Net: NetName=NetIC2_6 Pin=IC2-6
+Added Pin To Net: NetName=NetIC2_6 Pin=R1-1
+Added Net: Name=NetIC2_6
+Added Pin To Net: NetName=NetIC2_7 Pin=IC2-7
+Added Pin To Net: NetName=NetIC2_7 Pin=R2-1
+Added Net: Name=NetIC2_7
+Added Pin To Net: NetName=NetIC2_17 Pin=IC2-17
+Added Pin To Net: NetName=NetIC2_17 Pin=R3-2
+Added Net: Name=NetIC2_17
+Added Pin To Net: NetName=OUTL Pin=C9-1
+Added Pin To Net: NetName=OUTL Pin=R1-2
+Added Net: Name=OUTL
+Added Pin To Net: NetName=OUTR Pin=C13-2
+Added Pin To Net: NetName=OUTR Pin=R2-2
+Added Net: Name=OUTR
+Added Pin To Net: NetName=SCK Pin=IC2-12
+Added Net: Name=SCK
+Added Class: Name=PCM5102A 
+Added Room: Name=PCM5102A 
