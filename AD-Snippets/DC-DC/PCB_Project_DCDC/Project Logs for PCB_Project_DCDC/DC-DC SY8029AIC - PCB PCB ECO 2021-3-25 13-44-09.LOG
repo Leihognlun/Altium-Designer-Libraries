@@ -1,0 +1,44 @@
+Added Component: Designator=R5(0402R)
+Added Component: Designator=R6(0402R)
+Added Component: Designator=R7(0402R)
+Added Component: Designator=R8(0402R)
+Added Pin To Net: NetName=1V8 Pin=C2-2
+Added Pin To Net: NetName=1V8 Pin=C3-2
+Added Pin To Net: NetName=1V8 Pin=L1-2
+Added Pin To Net: NetName=1V8 Pin=R5-2
+Added Net: Name=1V8
+Added Pin To Net: NetName=3V3 Pin=C4-2
+Added Pin To Net: NetName=3V3 Pin=C5-2
+Added Pin To Net: NetName=3V3 Pin=L2-1
+Added Pin To Net: NetName=3V3 Pin=R7-2
+Added Net: Name=3V3
+Added Pin To Net: NetName=5V Pin=C1-1
+Added Pin To Net: NetName=5V Pin=IC1-2
+Added Pin To Net: NetName=5V Pin=IC1-6
+Added Pin To Net: NetName=5V Pin=IC1-7
+Added Net: Name=5V
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=IC1-4
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=IC1-8
+Added Pin To Net: NetName=NetC2_1 Pin=R5-1
+Added Pin To Net: NetName=NetC2_1 Pin=R6-2
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC5_1 Pin=C5-1
+Added Pin To Net: NetName=NetC5_1 Pin=IC1-1
+Added Pin To Net: NetName=NetC5_1 Pin=R7-1
+Added Pin To Net: NetName=NetC5_1 Pin=R8-2
+Added Net: Name=NetC5_1
+Added Pin To Net: NetName=NetIC1_3 Pin=IC1-3
+Added Pin To Net: NetName=NetIC1_3 Pin=L2-2
+Added Net: Name=NetIC1_3
+Added Pin To Net: NetName=NetIC1_5 Pin=IC1-5
+Added Pin To Net: NetName=NetIC1_5 Pin=L1-1
+Added Net: Name=NetIC1_5
+Added Class: Name=DC-DC SY8029AIC
+Added Room: Name=DC-DC SY8029AIC
