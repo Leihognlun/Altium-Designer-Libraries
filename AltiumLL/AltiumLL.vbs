@@ -47,7 +47,7 @@ Sub CreateCourtyardLine(x1,y1,x2,y2,width)
 
     atrack = PCBServer.PCBObjectFactory(eTrackObject,eNoDimension,eCreate_Default)
     atrack.width = mmstocoord(width)
-    atrack.layer = eMechanical15
+    atrack.layer = eMechanical4
     atrack.x1 = mmstocoord(x1)+footprint.x
     atrack.x2 = mmstocoord(x2)+footprint.x
     atrack.y1 = mmstocoord(y1)+footprint.y
@@ -78,7 +78,7 @@ Sub CreateCourtyardCircle(x,y,rad,width)
     acircle.LineWidth = mmstocoord(width)
     acircle.StartAngle = 0
     acircle.EndAngle = 360
-    acircle.layer = eMechanical15
+    acircle.layer = eMechanical4
 
     if footprint Is Nothing Then Exit Sub
     footprint.board.addpcbobject(acircle)
