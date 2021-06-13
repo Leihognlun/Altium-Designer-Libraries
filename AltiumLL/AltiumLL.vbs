@@ -11,7 +11,7 @@ Dim stpFileName
 Dim AppVersion
 Dim decChar
 
-AppVersion = "1.8"
+AppVersion = "2.2"
 decChar = Mid(FormatNumber(0.1,1,true,false,-2), 2, 1)
 
 Sub CreateFootprintInLib(Name,Description)
@@ -47,7 +47,7 @@ Sub CreateCourtyardLine(x1,y1,x2,y2,width)
 
     atrack = PCBServer.PCBObjectFactory(eTrackObject,eNoDimension,eCreate_Default)
     atrack.width = mmstocoord(width)
-    atrack.layer = eMechanical4
+    atrack.layer = eMechanical14
     atrack.x1 = mmstocoord(x1)+footprint.x
     atrack.x2 = mmstocoord(x2)+footprint.x
     atrack.y1 = mmstocoord(y1)+footprint.y
@@ -78,7 +78,7 @@ Sub CreateCourtyardCircle(x,y,rad,width)
     acircle.LineWidth = mmstocoord(width)
     acircle.StartAngle = 0
     acircle.EndAngle = 360
-    acircle.layer = eMechanical4
+    acircle.layer = eMechanical14
 
     if footprint Is Nothing Then Exit Sub
     footprint.board.addpcbobject(acircle)
@@ -186,7 +186,7 @@ Sub CreateAssemblyLine(x1,y1,x2,y2,width)
 
     atrack = PCBServer.PCBObjectFactory(eTrackObject,eNoDimension,eCreate_Default)
     atrack.width = mmstocoord(width)
-    atrack.layer = eMechanical13
+    atrack.layer = eMechanical4
     atrack.x1 = mmstocoord(x1)+footprint.x
     atrack.x2 = mmstocoord(x2)+footprint.x
     atrack.y1 = mmstocoord(y1)+footprint.y
@@ -217,7 +217,7 @@ Sub CreateAssemblyCircle(x,y,rad,width)
     acircle.LineWidth = mmstocoord(width)
     acircle.StartAngle = 0
     acircle.EndAngle = 360
-    acircle.layer = eMechanical13
+    acircle.layer = eMechanical4
 
     if footprint Is Nothing Then Exit Sub
     footprint.board.addpcbobject(acircle)
@@ -487,6 +487,26 @@ Sub CreateComponentInLib(Name,Description,RefDes)
 
     SchComponent.Designator.Text      = RefDes
     SchComponent.ComponentDescription = Description
+
+
+End Sub
+
+
+Sub CreateFootprintInLib(Name,Description)
+Dim PCBLib
+
+    'PCBServer.PreProcess;
+    Set PCBLib = PCBServer.GetCurrentPCBLibrary
+    If PCBLib is Nothing Then
+       MsgBox "This is not a PCB library document", vbSystemModal, "Altium Library Loader"
+       Exit Sub
+    End If
+    Set footprint = pcblib.CreateNewComponent
+    PcbLib.CurrentComponent = footprint
+    footprint.Name = Name
+    footprint.Description = Description
+
+    PCBServer.PostProcess
 End Sub
 
 Sub AddParameter(name, value)
@@ -501,7 +521,7 @@ End Sub
 Sub CreatePin(x, y, designator, name, orientation, length, pintype, pinnames)
 Dim apin
 
-apin = SchServer.SchObjectFactory(ePin, eCreate_Default)
+Set apin = SchServer.SchObjectFactory(ePin, eCreate_Default)
 apin.PinLength = MilsToCoord(length)
 apin.Location = Point(MilsToCoord(x), MilsToCoord(y))
 apin.Color = 0 'BLACK
@@ -519,7 +539,7 @@ End Sub
 Sub CreateLeftPin(x, y, designator, name, length, pintype, pinnames)
 Dim apin
 
-apin = SchServer.SchObjectFactory(ePin, eCreate_Default)
+Set apin = SchServer.SchObjectFactory(ePin, eCreate_Default)
 apin.PinLength = MilsToCoord(length)
 apin.Location = Point(MilsToCoord(x), MilsToCoord(y))
 apin.Color = 0 'BLACK
@@ -537,7 +557,7 @@ End Sub
 Sub CreateRightPin(x, y, designator, name, length, pintype, pinnames)
 Dim apin
 
-apin = SchServer.SchObjectFactory(ePin, eCreate_Default)
+Set apin = SchServer.SchObjectFactory(ePin, eCreate_Default)
 apin.PinLength = MilsToCoord(length)
 apin.Location = Point(MilsToCoord(x), MilsToCoord(y))
 apin.Color = 0 'BLACK
@@ -555,7 +575,7 @@ End Sub
 Sub CreateTopPin(x, y, designator, name, length, pintype, pinnames)
 Dim apin
 
-apin = SchServer.SchObjectFactory(ePin, eCreate_Default)
+Set apin = SchServer.SchObjectFactory(ePin, eCreate_Default)
 apin.PinLength = MilsToCoord(length)
 apin.Location = Point(MilsToCoord(x), MilsToCoord(y))
 apin.Color = 0 'BLACK
@@ -573,7 +593,7 @@ End Sub
 Sub CreateBottomPin(x, y, designator, name, length, pintype, pinnames)
 Dim apin
 
-apin = SchServer.SchObjectFactory(ePin, eCreate_Default)
+Set apin = SchServer.SchObjectFactory(ePin, eCreate_Default)
 apin.PinLength = MilsToCoord(length)
 apin.Location = Point(MilsToCoord(x), MilsToCoord(y))
 apin.Color = 0 'BLACK
@@ -592,7 +612,7 @@ Sub DrawLine(x1, y1, x2, y2, width)
 Dim aline
 
     'Create a line object for the new library component.
-    aline = SchServer.SchObjectFactory(eLine,eCreate_Default)
+    Set aline = SchServer.SchObjectFactory(eLine,eCreate_Default)
     If aline Is Nothing Then Exit Sub
 
     'Define the line parameters.
@@ -609,7 +629,7 @@ Sub DrawCircle(x, y, rad, width)
 Dim acircle
 
     'Create a circle object for the new library component.
-    acircle = SchServer.SchObjectFactory(eArc,eCreate_Default)
+    Set acircle = SchServer.SchObjectFactory(eArc,eCreate_Default)
     If acircle Is Nothing Then Exit Sub
 
     'Define the circle parameters.
@@ -628,7 +648,7 @@ Sub DrawArc(x1, y1, startAngle, endAngle, rad, width)
 Dim aarc
 
     'Create a arc object for the new library component.
-    aarc = SchServer.SchObjectFactory(eArc,eCreate_Default)
+    Set aarc = SchServer.SchObjectFactory(eArc,eCreate_Default)
     If aarc Is Nothing Then Exit Sub
 
     'Define the arc parameters.
@@ -647,7 +667,12 @@ Sub DrawRectangle(x1, y1, x2, y2, width)
 Dim arectangle
 
     'Create a line object for the new library component.
-    arectangle = SchServer.SchObjectFactory(eRectangle,eCreate_Default)
+
+    'R := SchServer.SchObjectFactory(eRectangle, eCreate_Default);
+    'If R = Nil Then Exit;
+
+
+    Set arectangle = SchServer.SchObjectFactory(eRectangle,eCreate_Default)
     If arectangle Is Nothing Then Exit Sub
 
     'Define the line parameters.
@@ -666,7 +691,7 @@ Sub DrawLine2(x1, y1, x2, y2, width)
 Dim aline
 
     'Create a line object for the new library component.
-    aline = SchServer.SchObjectFactory(eLine,eCreate_Default)
+    Set aline = SchServer.SchObjectFactory(eLine,eCreate_Default)
     If aline Is Nothing Then Exit Sub
 
     'Define the line parameters.
@@ -683,7 +708,7 @@ Sub DrawCircle2(x, y, rad, width)
 Dim acircle
 
     'Create a circle object for the new library component.
-    acircle = SchServer.SchObjectFactory(eArc,eCreate_Default)
+    Set acircle = SchServer.SchObjectFactory(eArc,eCreate_Default)
     If acircle Is Nothing Then Exit Sub
 
     'Define the circle parameters.
@@ -702,7 +727,7 @@ Sub DrawArc2(x1, y1, startAngle, endAngle, rad, width)
 Dim aarc
 
     'Create a arc object for the new library component.
-    aarc = SchServer.SchObjectFactory(eArc,eCreate_Default)
+    Set aarc = SchServer.SchObjectFactory(eArc,eCreate_Default)
     If aarc Is Nothing Then Exit Sub
 
     'Define the arc parameters.
@@ -718,6 +743,8 @@ Dim aarc
 End Sub
 
 Sub FinaliseComponentInLib()
+
+Set SCHLib = SchServer.GetCurrentSchDocument
 
 SCHLib.AddSchComponent(SchComponent)
 
@@ -736,7 +763,7 @@ Sub AssignFootprint(LibraryPath, ModelName, ModelMapping)
     Dim ModelType
 
     ModelType = "PCBLIB"
-    Model = SchComponent.AddSchImplementation
+    Set Model = SchComponent.AddSchImplementation
     Model.ClearAllDatafileLinks
     Model.MapAsString = ModelMapping
     Model.ModelName = ModelName
@@ -785,17 +812,8 @@ Sub Form1Show(Sender)
    InstallFolder = WshShell.SpecialFolders("MyDocuments")
    InstalledDir = InstallFolder & "\AltiumLL"
 
-   LLXML = WshShell.SpecialFolders(5) & "\SamacSys\Library Loader\LibraryLoader.xml"
-   If fso.FileExists(LLXML) Then
-      LLUsername = ReadXML(LLXML,"emailAddress")
-      LLPassword = ReadXML(LLXML,"password")
-      UsernameTXT = LLUsername
-      PasswordTXT = LLPassword
-   Else
-      UsernameTXT = ReadTXT(1)
-      PasswordTXT = ReadTXT(2)
-   End If
-
+   UsernameTXT = ReadTXT(1)
+   PasswordTXT = ReadTXT(2)
    DnldsFldrTXT = ReadTXT(3)
    SchLibTXT = ReadTXT(4)
    PcbLibTXT = ReadTXT(5)
@@ -887,11 +905,33 @@ Sub ProcessCB(filename)
           Client.ShowDocument(SchLibDoc)
           prtName = lineArray(1)
           AddSCH = AddSchLib(prtName)
-          If Not AddSCH Then
-             MsgBox "Component " & prtName & " already exits! Skipping Library Load.", vbSystemModal, "Altium Library Loader"
-          Else
-             CreateComponentInLib lineArray(1), lineArray(2), lineArray(3)
-          End If
+          Set SCHLib = SchServer.GetCurrentSchDocument
+          Set SchComponent = SchServer.SchObjectFactory(eSchComponent, eCreate_Default)
+          If AddSCH Then
+             'CreateComponentInLib
+             If SCHLib is Nothing Then
+                MsgBox "This is not a SCH library document", vbSystemModal, "Altium Library Loader"
+                Exit Sub
+             End If
+
+             If SCHLib.ObjectID <> eSchLib Then
+                MsgBox "Please open schematic library.", vbSystemModal, "Altium Library Loader"
+                Exit Sub
+             End If
+
+             'Create a library component (a page of the library is created).
+             'Set SchComponent = SchServer.SchObjectFactory(eSchComponent, eCreate_Default)
+             If SchComponent Is Nothing Then Exit Sub
+
+             'Set up parameters for the library component.
+             SchComponent.CurrentPartID = 1
+             SchComponent.DisplayMode   = 0
+
+             'Define the LibReference and add the component to the library.
+             SchComponent.LibReference = lineArray(1)
+             SchComponent.Designator.Text = lineArray(3)
+             SchComponent.ComponentDescription = lineArray(2)
+          End if
        ElseIf lineArray(0) = "CreateLeftPin" And AddSCH Then
           CreateLeftPin lineArray(1), lineArray(2), lineArray(3), lineArray(4), lineArray(5), CInt(lineArray(6)), CInt(lineArray(7))
        ElseIf lineArray(0) = "CreateRightPin" And AddSCH Then
@@ -922,17 +962,36 @@ Sub ProcessCB(filename)
     Loop
     f.Close
 
-    If AddSCH Then FinaliseComponentInLib()
+    'If AddSCH Then FinaliseComponentInLib()
+    'FinaliseComponentInLib()
 
-    SchLibDoc.DoFileSave("SchLib")
+
+    'FinaliseComponentInLib
+    'Set SCHLib = SchServer.GetCurrentSchDocument
+    If AddSCH Then
+       SCHLib.AddSchComponent(SchComponent)
+    'Send a system notification that a new component has been added to the library.
+       SchServer.RobotManager.SendMessage nil, c_BroadCast, SCHM_PrimitiveRegistration, SchComponent.I_ObjectAddress
+    'SCHLib.CurrentSchComponent = SchComponent
+    'Refresh library.
+       SCHLib.GraphicallyInvalidate
+       SchLibDoc.DoFileSave("SchLib")
+    End If
+
 
     fso.DeleteFile(filename)
-
     Set fso = Nothing
 
     CurrentSCH = Client.OpenDocument("SCH", SchDocFile)
     Client.ShowDocument(CurrentSCH)
-    AddToSch
+
+    If AddSCH Then
+       AddToSch
+    Else
+        LastSlashIndex = InStrRev(txt_SchLib.Text,"\")
+        LibName = Mid(txt_SchLib.Text,LastSlashIndex+1)
+        MsgBox "Component " & prtName & " already exits!" & vbCrLf & vbCrLf & "Please place from " & LibName, vbSystemModal, "Altium Library Loader"
+    End if
 End Sub
 
 Sub ExtractEPW(fldr, dst)
@@ -994,19 +1053,27 @@ Sub Prechecks()
 End Sub
 
 Sub AddToSch()
+   Dim ObjectHandle
+   Set ObjectHandle = SchServer.LoadComponentFromLibrary(prtName, txt_SchLib.Text)
    Set CurrentSheet = SchServer.GetCurrentSchDocument
-   PlaceComponent CurrentSheet,txt_SchLib.Text, prtName, 0, 0, 0
-   SchServer.GetCurrentSchDocument.GraphicallyInvalidate
+   CurrentSheet.AddSchObject(ObjectHandle)
+   ObjectHandle.MoveToXY 0, 0
+   ObjectHandle.SetState_Orientation 0
+   CurrentSheet.GraphicallyInvalidate
+   Set ObjectHandle = Nothing
    If chk_ShowInstruction.Checked Then MsgBox "Please check the bottom left corner of your schematic to drag component " & prtName & " into the desired position.", vbSystemModal, "Altium Library Loader"
 End Sub
 
 Function PlaceComponent(TargetSheet, LibraryLocation, LibraryRef, X, Y, Orientation)
   Dim ObjectHandle
-  ObjectHandle = SchServer.LoadComponentFromLibrary(LibraryRef, LibraryLocation)
-  TargetSheet.AddAndPositionSchObject(ObjectHandle)
+  Set ObjectHandle = SchServer.LoadComponentFromLibrary(LibraryRef, LibraryLocation)
+
+  'TargetSheet.AddAndPositionSchObject(ObjectHandle)
+  TargetSheet.AddSchObject(ObjectHandle)
   ObjectHandle.MoveToXY X, Y
   ObjectHandle.SetState_Orientation Orientation
-  PlaceComponent = ObjectHandle
+  TargetSheet.GraphicallyInvalidate
+  Set ObjectHandle = Nothing
 End Function
 
 Function ProcessSelectedPart(partID)
@@ -1049,7 +1116,7 @@ Function ProcessSelectedPart(partID)
 
            Set oReq = CreateObject("msxml2.ServerXMLHTTP.3.0")
            If epwWSP = vbNullString Then
-               oReq.Open "GET", "https://altium.componentsearchengine.com/ga/model.php?partID=" & partID & "&pi=2&step=1&st=4&lt=4", False
+               oReq.Open "GET", "https://ad.componentsearchengine.com/ga/model.php?partID=" & partID & "&pi=2&step=1&st=4&lt=4", False
            Else
                oReq.Open "GET", "https://" & epwWSP & ".componentsearchengine.com/ga/model.php?partID=" & partID & "&pi=2&step=1&st=4&lt=4", False
            End If
@@ -1071,7 +1138,7 @@ Function ProcessSelectedPart(partID)
            Set oReq = Nothing
            vbAns = MsgBox("3D Model STEP file has been saved to " & ecadModelPath & stpFileName & vbCrLf & vbCrLf & "Would you like to build or request the Symbol and Footprint?", vbYesNo, "Altium Library Loader")
            If vbAns = vbYes Then
-               CreateObject("WScript.Shell").Run("https://altium.componentsearchengine.com/partRequest.html?partID=" & partID)
+               CreateObject("WScript.Shell").Run("https://ad.componentsearchengine.com/partRequest.html?partID=" & partID)
            End If
            Screen.Cursor = crDefault
            lbl_Message.Caption = vbNullString
@@ -1081,9 +1148,9 @@ Function ProcessSelectedPart(partID)
 
         If epwWSP = vbNullString Then
            If chk_AltiumSymbols.Checked Then
-               cb = httpGET("https://altium.componentsearchengine.com/ga/model.php?partID=" & partID & "&st=4&lt=4&pi=2&ver=2", username, password)
+               cb = httpGET("https://ad.componentsearchengine.com/ga/model.php?partID=" & partID & "&st=4&lt=4&pi=2&ver=2", username, password)
            Else
-               cb = httpGET("https://altium.componentsearchengine.com/ga/model.php?partID=" & partID & "&st=4&lt=4&pi=2", username, password)
+               cb = httpGET("https://ad.componentsearchengine.com/ga/model.php?partID=" & partID & "&st=4&lt=4&pi=2", username, password)
            End If
         Else
             If chk_AltiumSymbols.Checked Then
@@ -1096,7 +1163,7 @@ Function ProcessSelectedPart(partID)
         If Trim(cb) = "Error: This part ID is not released" Or cb = "Error: Data entry for this part ID is not yet complete." Then
            MsgBox "This part is almost ready. You have 3 options:" & vbCrLf & vbCrLf & "1. Find Alternate" & vbCrLf & "2. Online Build" & vbCrLf & "3. Request we build it for FREE!", vbSystemModal, "Find Alternate, Build or Request"
            If epwWSP = vbNullString Then
-              CreateObject("WScript.Shell").Run("https://altium.componentsearchengine.com/entry_u.php?mna=" & URLEncode(epwMAN) & "&mpn=" & URLEncode(epwMPN) & "&pna=" & URLEncode(epwPNA))
+              CreateObject("WScript.Shell").Run("https://ad.componentsearchengine.com/entry_u.php?mna=" & URLEncode(epwMAN) & "&mpn=" & URLEncode(epwMPN) & "&pna=" & URLEncode(epwPNA))
            Else
               CreateObject("WScript.Shell").Run("https://" & epwWSP & ".componentsearchengine.com/entry_u.php?mna=" & URLEncode(epwMAN) & "&mpn=" & URLEncode(epwMPN) & "&pna=" & URLEncode(epwPNA))
            End If
@@ -1118,7 +1185,7 @@ Function ProcessSelectedPart(partID)
         If InStr(cb,"AssignSTEPmodel") <> 0 Then
            Set oReq = CreateObject("msxml2.ServerXMLHTTP.3.0")
            If epwWSP = vbNullString Then
-               oReq.Open "GET", "https://altium.componentsearchengine.com/ga/model.php?partID=" & partID & "&pi=2&step=1&st=4&lt=4", False
+               oReq.Open "GET", "https://ad.componentsearchengine.com/ga/model.php?partID=" & partID & "&pi=2&step=1&st=4&lt=4", False
            Else
                oReq.Open "GET", "https://" & epwWSP & ".componentsearchengine.com/ga/model.php?partID=" & partID & "&pi=2&step=1&st=4&lt=4", False
            End If
@@ -1248,7 +1315,22 @@ Function httpGET(url, username, password)
     httpGET = oReq.responseText
     Set oReq = Nothing
     If Err.Number <> 0 Then
-        MsgBox "Please check your internet connection." & vbCrLf & vbCrLf & "If you are behind a proxy server, you will need to either enter the " & Chr(34) & "Address" & Chr(34) & " and " & Chr(34) & "Port" & Chr(34) & " details on the Settings page or allow access to https://*.componentsearchengine.com on port 80.", vbSystemModal, "Altium Library Loader"
+       Err.Number = 0
+       url = Replace(url,"https://ad.","https://")
+       Set oReq = CreateObject("Msxml2.ServerXMLHTTP.3.0")
+       oReq.Open "GET", url, False
+       oReq.setRequestHeader "Authorization", "Basic " + Replace(Mid(Base64Encode(username + ":" + password),5),vbLf,"")
+       oReq.setRequestHeader "Content-Type", "application/x-www-form-urlencoded; charset=UTF-8"
+       oReq.setRequestHeader "User-Agent", "AltiumLibraryLoaderV" & AppVersion
+       If chk_Proxy.Checked Then
+          oReq.setProxy 2, Trim(txt_Address.Text) & ":" & Trim(txt_Port.Text), ""
+       End if
+       oReq.send
+       httpGET = oReq.responseText
+       Set oReq = Nothing
+       If Err.Number <> 0 Then
+          MsgBox "Please check your internet connection." & vbCrLf & vbCrLf & "If you are behind a proxy server, you will need to either enter the " & Chr(34) & "Address" & Chr(34) & " and " & Chr(34) & "Port" & Chr(34) & " details on the Settings page or allow access to https://*.componentsearchengine.com on port 80." & vbCrLf & vbCrLf & "Alternatively, please contact info@samacsys.com for further assistance.", vbSystemModal, "Altium Library Loader"
+       End If
     End If
 End Function
 
@@ -1271,24 +1353,6 @@ Loop
 URLEncode = TempAns
 End Function
 
-Function ReadXML(XMLFileName, XMLTag)
-   'Set XMLFile = CreateObject("Msxml2.DOMDocument")
-   'XMLFile.Load(XMLFileName)
-   'Set XMLFileVariale = XMLFile.getElementsByTagName(XMLTag)
-   'ReadXML = XMLFileVariale.Item(0).Text
-   Set fso = CreateObject("Scripting.FileSystemObject")
-   Set XMLFile = fso.OpenTextFile(XMLFileName, 1)
-   xmlData = XMLFile.ReadAll
-   arrData = Split(xmlData, vbCrLf)
-   If XMLTag = "emailAddress" Then
-      TagEnd = InStr(arrData(11), "</emailAddress>")
-      ReadXML = Mid(arrData(11),17,TagEnd-17)
-   Else
-      TagEnd = InStr(arrData(12), "</password>")
-      ReadXML = Mid(arrData(12),13,TagEnd-13)
-   End If
-End Function
-
 Function ReadTXT(LineNo)
    TXTFileName = InstalledDir & "\AltiumLL.txt"
    Set fso = CreateObject("Scripting.FileSystemObject")
@@ -1298,15 +1362,6 @@ Function ReadTXT(LineNo)
    arrData = Split(txtData, vbCrLf)
    ReadTXT = arrData(LineNo-1)
 End Function
-
-'Function UpdateXML(XMLNode, XMLValue)
-'   XMLFileName = InstalledDir & "\AltiumLL.xml"
-'   Set XMLFile = CreateObject("Msxml2.DOMDocument")
-'   XMLFile.Load(XMLFileName)
-'   Set XMLNode = XMLFile.selectsinglenode(XMLNode)
-'   XMLNode.Text = XMLValue
-'   XMLFile.save(XMLFilename)
-'End Function
 
 Function UpdateTXT()
    TXTFileName = InstalledDir & "\AltiumLL.txt"
@@ -1334,7 +1389,7 @@ Sub btn_LoginClick(Sender)
 End Sub
 
 Sub Login()
-   responseStr = httpGET("https://altium.componentsearchengine.com/ga/auth.txt?",txt_Username.Text,txt_Password.Text)
+   responseStr = httpGET("https://ad.componentsearchengine.com/ga/auth.txt?",txt_Username.Text,txt_Password.Text)
    If responseStr = "OK" Then
       MsgBox "Login successful", vbSystemModal, "Altium Library Loader"
       UpdateTXT
@@ -1348,11 +1403,11 @@ Sub Login()
 End Sub
 
 Sub lbl_RegisterClick(Sender)
-    CreateObject("WScript.Shell").Run("https://altium.componentsearchengine.com/register.php")
+    CreateObject("WScript.Shell").Run("https://ad.componentsearchengine.com/register.php")
 End Sub
 
 Sub lbl_ForgotPasswordClick(Sender)
-    CreateObject("WScript.Shell").Run("https://altium.componentsearchengine.com/resetPassword.php")
+    CreateObject("WScript.Shell").Run("https://ad.componentsearchengine.com/resetPassword.php")
 End Sub
 
 Function AddPcbLib(footprint)
@@ -1373,10 +1428,10 @@ End Function
 
 
 Function AddSchLib(component)
-    CurrentLib = SCHServer.GetCurrentSchDocument
-    LibraryIterator = CurrentLib.SchLibIterator_Create
+    Set CurrentLib = SCHServer.GetCurrentSchDocument
+    Set LibraryIterator = CurrentLib.SchLibIterator_Create
     LibraryIterator.AddFilter_ObjectSet(MkSet(eSchComponent))
-    LibComp = LibraryIterator.FirstSchObject
+    Set LibComp = LibraryIterator.FirstSchObject
     LibCompNameNext = LibComp.LibReference
     On Error Resume Next
     Do
@@ -1385,7 +1440,7 @@ Function AddSchLib(component)
           AddSchLib = false
           Exit Function
        End If
-       LibComp = LibraryIterator.NextSchObject
+       Set LibComp = LibraryIterator.NextSchObject
        LibCompNameNext = LibComp.LibReference
     Loop Until LibCompNameNext = LibCompNamePrev
     CurrentLib.SchIterator_Destroy(LibraryIterator)
@@ -1400,7 +1455,7 @@ Function CheckLogin()
     If Trim(txt_Username.Text) = vbNullString Or Trim(txt_Password.Text) = vbNullString Then
        CheckLogin = False
     Else
-        responseStr = httpGET("https://altium.componentsearchengine.com/ga/auth.txt?",txt_Username.Text,txt_Password.Text)
+        responseStr = httpGET("https://ad.componentsearchengine.com/ga/auth.txt?",txt_Username.Text,txt_Password.Text)
         If responseStr = "OK" Then
            CheckLogin = True
         Else
@@ -1727,7 +1782,7 @@ btn_SchLib.Cursor = crHandPoint
 End Sub
 
 Sub img_EmailClick(Sender)
-    CreateObject("WScript.Shell").Run("mailto:?subject=ALTIUM%20Libraries%20-%20FREE&body=Hi%20%0A%0AYou%20have%20to%20check%20out%20these%20Free%20PCB%20libraries%20for%20Altium,%20AMAZING!%20https://Altium.ComponentSearchEngine.com")
+    CreateObject("WScript.Shell").Run("mailto:?subject=ALTIUM%20Libraries%20-%20FREE&body=Hi%20%0A%0AYou%20have%20to%20check%20out%20these%20Free%20PCB%20libraries%20for%20Altium,%20AMAZING!%0AGet%20the%20Altium%20Library%20Loader%20from%20https://componentsearchengine.com/tools")
 End Sub
 
 Sub img_GetStartedMouseMove(Sender, Shift, X, Y)
@@ -1771,15 +1826,15 @@ img_LinkedIn.Cursor = crHandPoint
 End Sub
 
 Sub img_FacebookClick(Sender)
-CreateObject("WScript.Shell").Run("https://www.facebook.com/sharer/sharer.php?u=altium.ComponentSearchEngine.com")
+CreateObject("WScript.Shell").Run("https://www.facebook.com/SamacSysLtd/")
 End Sub
 
 Sub img_TwitterClick(Sender)
-CreateObject("WScript.Shell").Run("https://twitter.com/home?status=These%20amazing%20PCB%20Libraries%20for%20ALTIUM%20just%20saved%20me%20hours%20of%20work!!!%20-%20Altium.ComponentSearchEngine.com%20")
+CreateObject("WScript.Shell").Run("https://twitter.com/SamacSys")
 End Sub
 
 Sub img_LinkedInClick(Sender)
-CreateObject("WScript.Shell").Run("https://www.linkedin.com/shareArticle?mini=true&url=altium.ComponentSearchEngine.com&title=ALTIUM%20LIBRARIES%20-%20FREE&summary=These%20amazing%20PCB%20Libraries%20for%20ALTIUM%20just%20saved%20me%20hours%20of%20work!!!&source=")
+CreateObject("WScript.Shell").Run("https://www.linkedin.com/company/samacsys-ltd")
 End Sub
 
 Sub img_ContactUsClick(Sender)
@@ -1795,7 +1850,7 @@ CreateObject("WScript.Shell").Run("https://www.samacsys.com/case-study-entry/")
 End Sub
 
 Sub pnl_SearchClick(Sender)
-    PerformSearch txt_Keywords.Text, vbNullString, false, "altium"
+    PerformSearch txt_Keywords.Text, vbNullString, false, "ad"
 End Sub
 
 Sub PerformSearch(Keywords, partID, match, partner)
@@ -2203,7 +2258,7 @@ End Sub
 Sub pnl_MoreInfoClick(Sender)
     selectedRow = StringGrid1.Row
     partID = StringGrid1.Cols(6)(selectedRow)
-    If IsNumeric(partID) Then CreateObject("WScript.Shell").Run("https://altium.componentsearchengine.com/part.php?partID=" & partID)
+    If IsNumeric(partID) Then CreateObject("WScript.Shell").Run("https://ad.componentsearchengine.com/part.php?partID=" & partID)
 End Sub
 
 Sub pnl_DesignClick(Sender)
@@ -2338,7 +2393,7 @@ Sub ShowImages()
           img_SYM.Visible = True
           img_PCB.Visible = True
 
-          xHttp.Open "GET", "https://altium.componentsearchengine.com/symbol.php?partID=" & partID, False
+          xHttp.Open "GET", "https://ad.componentsearchengine.com/symbol.php?partID=" & partID, False
           If chk_Proxy.Checked Then
              xHttp.setProxy 2, Trim(txt_Address.Text) & ":" & Trim(txt_Port.Text), ""
           End if
@@ -2352,7 +2407,7 @@ Sub ShowImages()
           bStrm.Close
           img_SYM.Picture.LoadFromFile ImagePath & "\SYM_" & partID & ".png"
 
-          xHttp.Open "GET", "https://altium.componentsearchengine.com/footprint.php?partID=" & partID, False
+          xHttp.Open "GET", "https://ad.componentsearchengine.com/footprint.php?partID=" & partID, False
           If chk_Proxy.Checked Then
              xHttp.setProxy 2, Trim(txt_Address.Text) & ":" & Trim(txt_Port.Text), ""
           End if
@@ -2416,25 +2471,25 @@ End Sub
 Sub img_SYMClick(Sender)
     selectedRow = StringGrid1.Row
     partID = StringGrid1.Cols(6)(selectedRow)
-    CreateObject("WScript.Shell").Run("https://altium.componentsearchengine.com/footprintPreview.php?partID=" & partID & "&u=0&target=symbol")
+    CreateObject("WScript.Shell").Run("https://ad.componentsearchengine.com/footprintPreview.php?partID=" & partID & "&u=0&target=symbol")
 End Sub
 
 Sub img_PCBClick(Sender)
     selectedRow = StringGrid1.Row
     partID = StringGrid1.Cols(6)(selectedRow)
-    CreateObject("WScript.Shell").Run("https://altium.componentsearchengine.com/footprintPreview.php?partID=" & partID & "&u=0")
+    CreateObject("WScript.Shell").Run("https://ad.componentsearchengine.com/footprintPreview.php?partID=" & partID & "&u=0")
 End Sub
 
 Sub img_3DMClick(Sender)
     selectedRow = StringGrid1.Row
     partID = StringGrid1.Cols(6)(selectedRow)
-    CreateObject("WScript.Shell").Run("https://altium.componentsearchengine.com/viewer/3D.php?partID=" & partID)
+    CreateObject("WScript.Shell").Run("https://ad.componentsearchengine.com/viewer/3D.php?partID=" & partID)
 End Sub
 
 
 Sub txt_KeywordsKeyDown(Sender, Key, Shift)
 If Key = 13 Then
-   PerformSearch txt_Keywords.Text, vbNullString, false, "altium"
+   PerformSearch txt_Keywords.Text, vbNullString, false, "ad"
 End If
 End Sub
 
@@ -2444,7 +2499,7 @@ End Sub
 
 Sub lbl_MessageClick(Sender)
     If lbl_Message.Caption = "No parts found. Click here to request this part" Then
-        CreateObject("WScript.Shell").Run("https://altium.componentsearchengine.com/newPart.php")
+        CreateObject("WScript.Shell").Run("https://ad.componentsearchengine.com/newPart.php")
         lbl_Message.Caption = vbNullString
         lbl_Message.Cursor = crDefault
     End If
