@@ -6,8 +6,8 @@
  > - Top/Bottom = M2/M3 -- 3D Body | 元件3D模型层
  > - Top/Bottom = M4/M5 -- Component Outline | 元件外形层
  > - Top/Bottom = M6/M7 -- Component Center | 元件中心层
- > - Top/Bottom = M8/M9 -- Value | 元件参数层
- > - Top/Bottom = M10/M11 -- Designator | 元件标号层  
+ > - Top/Bottom = M8/M9 -- Value | 元件参数层(Bodoni MT Condensed)
+ > - Top/Bottom = M10/M11 -- Designator | 元件标号层(Consolas)  
   ![Meachincal Layers](./README-Picture/component-meachincal-layers.png)
 ## PCB Project | PCB项目
 ### Project Parameters | 项目参数
