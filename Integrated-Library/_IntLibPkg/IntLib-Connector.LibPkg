@@ -177,7 +177,7 @@ GenerateClassCluster=0
 DocumentUniqueId=UALSHPAS
 
 [Document9]
-DocumentPath=..\Connector-Power\Connector-Power.PcbLib
+DocumentPath=..\Connector-Power\Connector-DC.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -194,7 +194,7 @@ GenerateClassCluster=0
 DocumentUniqueId=FGHBTAMB
 
 [Document10]
-DocumentPath=..\Connector-Power\Connector-Power.SchLib
+DocumentPath=..\Connector-Power\Connector-DC.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
