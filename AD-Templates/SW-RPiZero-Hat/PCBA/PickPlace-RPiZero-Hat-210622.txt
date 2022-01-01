@@ -1,0 +1,24 @@
+Altium Designer Pick and Place Locations
+D:\GitHub\Altium-Designer-Libraries\AD-Templates\SW-RPi-Zero\Project Outputs for SW-RPiZero-A\Pick Place for RPiZero-Hat.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       22/06/21
+Time:       13:41
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Comment                       Layer       Footprint                Center-X(mil) Center-Y(mil) Rotation Description                                         
+MH4        MH                            TopLayer    M2.5                     2477.165      2988.976      180      安装孔-附加安装铜柱信息                                        
+MH3        MH                            TopLayer    M2.5                     4800.000      2988.976      180      安装孔-附加安装铜柱信息                                        
+MH2        MH                            TopLayer    M2.5                     4800.000      2044.094      180      安装孔-附加安装铜柱信息                                        
+MH1        MH                            TopLayer    M2.5                     2477.165      2044.094      180      安装孔-附加安装铜柱信息                                        
+J1         "2*20P 2.54 SMT Female  4mmH" BottomLayer SMT2X20/2.54X3.5_NONHOLE 3638.583      2969.291      0        ""                                                  
+FID6       Fiducial                      TopLayer    FID10-20                 4813.347      1097.874      270      "Fiducial mark.  There is nothing to buy or mount." 
+FID5       Fiducial                      TopLayer    FID10-20                 4533.347      1097.874      270      "Fiducial mark.  There is nothing to buy or mount." 
+FID4       Fiducial                      TopLayer    FID10-20                 4253.347      1097.874      270      "Fiducial mark.  There is nothing to buy or mount." 
+FID3       Fiducial                      TopLayer    FID10-20                 4809.606      1294.724      270      "Fiducial mark.  There is nothing to buy or mount." 
+FID2       Fiducial                      TopLayer    FID10-20                 4529.606      1294.724      270      "Fiducial mark.  There is nothing to buy or mount." 
+FID1       Fiducial                      TopLayer    FID10-20                 4269.606      1294.724      270      "Fiducial mark.  There is nothing to buy or mount." 
