@@ -1,0 +1,10 @@
+PCB-SoundWedge-RPi-Zero  dev-a5,dev-a4o,dev-a5r,a5e,
+PCB-SoundWedge-RPi-3A   dev-a6,dev-a6l,dev-l6,
+PCB-SoundWedge-RPi-3B
+PCB-SoundWedge-RPi-CM3
+PCB-SoundWedge-RPi-CM4  dev-h4,dev-h1g,dev-e5,dev-e5h2,
+PCB工程名：PCB-RPiCM4-H4O4
+PCB文件名：H4O4
+Project Parameters:ProjectAuthor=LHL,PCBRev=V0.1,ProjectTitle=RPiCM4-H4O4
+
+PCB-SoundWedge-PowerPlayer dev-u4,dev-u6,dev-u2,dev-adalight,
