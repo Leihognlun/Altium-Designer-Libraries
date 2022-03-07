@@ -5,6 +5,6 @@ PCB-SoundWedge-RPi-CM3
 PCB-SoundWedge-RPi-CM4  dev-h4,dev-h1g,dev-e5,dev-e5h2,
 PCB工程名：PCB-RPiCM4-H4O4
 PCB文件名：H4O4
-Project Parameters:ProjectAuthor=LHL,PCBRev=V0.1,ProjectTitle=RPiCM4-H4O4
+Project Parameters: ProjectTitle = RPiCM4-H4O4 , ProjectAuthor = LHL , PCBRev = V0.1 ,
 
 PCB-SoundWedge-PowerPlayer dev-u4,dev-u6,dev-u2,dev-adalight,
