@@ -10,7 +10,7 @@
 * **PcbLib (参考)**  
 
 * **SchLib (参考)**    
-* **AD-Snippets (原理图模块)**
+* **AD-Snippets (原理图模块)**$
 * **AD-Template (模板：工程、原理图、PCB、BOM、机械层定义、拼板..)**
 * **AltiumLL (PCB封装工具-辅助)**
 * **Integrated-Libary (使用中)**
