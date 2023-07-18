@@ -211,7 +211,7 @@ Project Logs for */
 *.COD
 *.HTM
 *.I
-*.LST
+!*.LST
 *.MAP
 *.M51
 *.M66
@@ -270,6 +270,6 @@ bash.exe.stackdump
 *.o
 *.o
 *.o
-*.s
+!*.s
 *.icf
 
