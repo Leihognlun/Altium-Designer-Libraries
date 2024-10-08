@@ -278,7 +278,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=UCRHIOXS
+DocumentUniqueId=NOKMGFFJ
 
 [Document15]
 DocumentPath=..\IC-Cmedia\IC-Cmedia.SchLib
@@ -312,7 +312,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=DUZXALPF
+DocumentUniqueId=XLURCYNC
 
 [Document17]
 DocumentPath=..\IC-MicroChip\IC-MicroChip.SchLib
@@ -329,7 +329,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=EQNDPIHZ
+DocumentUniqueId=DAHNPAKO
 
 [Document18]
 DocumentPath=..\IC-ExploreMicro\IC-ExploreMicro.PcbLib
@@ -363,7 +363,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=UCRHIOXS
+DocumentUniqueId=CGYRUFJJ
 
 [Document20]
 DocumentPath=..\IC-RUNIC\IC-RUNIC.SchLib
@@ -397,7 +397,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=EQNDPIHZ
+DocumentUniqueId=PVYHXBEU
 
 [Document22]
 DocumentPath=..\IC-Rockchip\IC-Rockchip.SchLib
@@ -414,7 +414,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=CFPKZIUQ
+DocumentUniqueId=LFVBEDIW
 
 [Document23]
 DocumentPath=..\IC-RaspberryPi\IC-RaspberryPi.SchLib
@@ -431,7 +431,41 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=RWSXHVDH
+DocumentUniqueId=LCKRQVLV
+
+[Document24]
+DocumentPath=..\IC-Winbond\IC-Winbond.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KTMDSDLL
+
+[Document25]
+DocumentPath=..\IC-Chipanalog\IC-Chipanalog.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VSMAMCNK
 
 [OutputGroup1]
 Name=Netlist Outputs
