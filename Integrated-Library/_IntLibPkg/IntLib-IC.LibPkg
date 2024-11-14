@@ -125,7 +125,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=EQNDPIHZ
+DocumentUniqueId=QLDRENHI
 
 [Document6]
 DocumentPath=..\IC-MicroOne\IC-MicroOne.PcbLib
@@ -227,7 +227,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=RWSXHVDH
+DocumentUniqueId=XYJXOCMS
 
 [Document12]
 DocumentPath=..\IC-Silergy\IC-Silergy.SchLib
@@ -278,9 +278,26 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=NOKMGFFJ
+DocumentUniqueId=IEFBSWMR
 
 [Document15]
+DocumentPath=..\IC-STC\IC-STC.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=XQHIQCTC
+
+[Document16]
 DocumentPath=..\IC-Cmedia\IC-Cmedia.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -297,23 +314,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FENLWJSP
 
-[Document16]
-DocumentPath=..\IC-STC\IC-STC.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=XLURCYNC
-
 [Document17]
 DocumentPath=..\IC-MicroChip\IC-MicroChip.SchLib
 AnnotationEnabled=1
@@ -329,7 +329,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=DAHNPAKO
+DocumentUniqueId=EQNDPIHZ
 
 [Document18]
 DocumentPath=..\IC-ExploreMicro\IC-ExploreMicro.PcbLib
@@ -363,7 +363,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=CGYRUFJJ
+DocumentUniqueId=ITUSMRYD
 
 [Document20]
 DocumentPath=..\IC-RUNIC\IC-RUNIC.SchLib
@@ -397,7 +397,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=PVYHXBEU
+DocumentUniqueId=CXGPWCPH
 
 [Document22]
 DocumentPath=..\IC-Rockchip\IC-Rockchip.SchLib
@@ -414,7 +414,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LFVBEDIW
+DocumentUniqueId=PBUCITNT
 
 [Document23]
 DocumentPath=..\IC-RaspberryPi\IC-RaspberryPi.SchLib
@@ -431,7 +431,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LCKRQVLV
+DocumentUniqueId=FEFJMOSF
 
 [Document24]
 DocumentPath=..\IC-Winbond\IC-Winbond.SchLib
@@ -466,6 +466,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VSMAMCNK
+
+[Document26]
+DocumentPath=..\IC-Holtek\IC-Holtek.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=RWSXHVDH
 
 [OutputGroup1]
 Name=Netlist Outputs
