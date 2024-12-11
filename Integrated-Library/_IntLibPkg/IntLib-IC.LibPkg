@@ -125,7 +125,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=QLDRENHI
+DocumentUniqueId=EQNDPIHZ
 
 [Document6]
 DocumentPath=..\IC-MicroOne\IC-MicroOne.PcbLib
@@ -227,7 +227,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=XYJXOCMS
+DocumentUniqueId=DQETRDAQ
 
 [Document12]
 DocumentPath=..\IC-Silergy\IC-Silergy.SchLib
@@ -278,7 +278,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=IEFBSWMR
+DocumentUniqueId=HSWJNPUK
 
 [Document15]
 DocumentPath=..\IC-STC\IC-STC.SchLib
@@ -295,7 +295,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=XQHIQCTC
+DocumentUniqueId=ODFKJRJB
 
 [Document16]
 DocumentPath=..\IC-Cmedia\IC-Cmedia.SchLib
@@ -329,7 +329,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=EQNDPIHZ
+DocumentUniqueId=SDNWAKVY
 
 [Document18]
 DocumentPath=..\IC-ExploreMicro\IC-ExploreMicro.PcbLib
@@ -363,7 +363,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=ITUSMRYD
+DocumentUniqueId=KJXPKYMI
 
 [Document20]
 DocumentPath=..\IC-RUNIC\IC-RUNIC.SchLib
@@ -397,7 +397,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=CXGPWCPH
+DocumentUniqueId=TMGRGYEB
 
 [Document22]
 DocumentPath=..\IC-Rockchip\IC-Rockchip.SchLib
@@ -414,7 +414,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=PBUCITNT
+DocumentUniqueId=JSSCJERE
 
 [Document23]
 DocumentPath=..\IC-RaspberryPi\IC-RaspberryPi.SchLib
@@ -431,7 +431,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=FEFJMOSF
+DocumentUniqueId=DSQEOLFC
 
 [Document24]
 DocumentPath=..\IC-Winbond\IC-Winbond.SchLib
@@ -483,6 +483,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RWSXHVDH
+
+[Document27]
+DocumentPath=..\IC-Nexperia\IC-Nexperia.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=NXRIXKOF
 
 [OutputGroup1]
 Name=Netlist Outputs
