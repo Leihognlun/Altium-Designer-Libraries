@@ -50,6 +50,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=..\_General-PcbLib\IC-FootPrint.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=GCNILPVF
+
+[Document2]
 DocumentPath=..\IC-BL\IC-BL.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -66,7 +83,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UUGAOYLA
 
-[Document2]
+[Document3]
 DocumentPath=..\IC-BL\IC-BL.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -83,7 +100,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BEWMQUPU
 
-[Document3]
+[Document4]
 DocumentPath=..\IC-LowPower\IC-LowPower.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -100,7 +117,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UCRHIOXS
 
-[Document4]
+[Document5]
 DocumentPath=..\IC-LowPower\IC-LowPower.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,7 +134,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FUWDYRDL
 
-[Document5]
+[Document6]
 DocumentPath=..\IC-MicroOne\IC-MicroOne.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EQNDPIHZ
 
-[Document6]
+[Document7]
 DocumentPath=..\IC-MicroOne\IC-MicroOne.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -150,23 +167,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JGLIGYUB
-
-[Document7]
-DocumentPath=..\_General-PcbLib\IC-FootPrint.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=GCNILPVF
 
 [Document8]
 DocumentPath=..\IC-WCH\IC-WCH.SchLib
