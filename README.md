@@ -97,4 +97,6 @@
    - M4-M5 Components Outline  元件外形
    - M14-M15 Courtyard 元件安装所需空间+中心标识，接插件可添加插入线材空间如HDMI，USB (IPC标准 必须)   
    - M10-M11 Designator (强烈建议：生产贴片用)
+     - 字体与大小：Bodoni MT Condensed; 0.8mm 1mm 1.5mm 2mm 3mm 5mm 
    - M8-M9 Value (建议：样板焊接,调试)
+     - 字体与大小：Bodoni MT Condensed; 0.8mm 1mm 1.5mm 2mm 3mm 5mm 
