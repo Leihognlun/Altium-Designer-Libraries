@@ -72,6 +72,7 @@
 * **Altium Designer -> Tools -> SymbolWizard （使用AD中Symbol生成工具）**  
    - Design Item ID : 元件类型+封装类型 命名（参考现有命名格式：Res_Chip、Ind_Chip、Ind_WireWound..）
    - Designator ：(参考<元件分类>标号描述)
+     - 使用Room复制时，Room元器件命名方式采用 格式 \$Component\$ChannelAlpha
    - Comment ：主要参数(10uH/1A) 或 原厂型号(stm32f103f8t6)
    - Description: 简要描述器件类型(DC-DC、放大器、DAC芯片..)
    - Parameters ：Manufacturer_Name、Manufacturer_Part_Number （元件厂家名、元件原厂编号）
